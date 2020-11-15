@@ -7,7 +7,7 @@
   <body>
     <header class="page-header">
       <h1 class="visually-hidden">Cat Energy</h1>
-      <a href="#" class="logo-container">
+      <a href="index.html" class="logo-container">
         <img src="https://via.placeholder.com/34x38" alt="Логотип" class="logo">
         <img src="https://via.placeholder.com/101x18" alt="Cat Energy" class="logo-text">
       </a>
@@ -27,15 +27,15 @@
           <h3 class="visually-hidden">Информация о питомце:</h3>
           <label class="input">
             <span class="input__label">Имя:*</span>
-            <input type="text" class="input__field" placeholder="Барсик" required>
+            <input type="text" class="input__field" name="name" placeholder="Барсик" required>
           </label>
           <label class="input">
             <span class="input__label">Вес (кг):*</span>
-            <input type="text" class="input__field" placeholder="7" required>
+            <input type="text" class="input__field" name="weight" placeholder="7" required>
           </label>
           <label class="input">
             <span class="input__label">Возраст (лет):</span>
-            <input type="text" class="input__field" placeholder="7">
+            <input type="text" class="input__field" name="age" placeholder="7">
           </label>
         </section>
 
@@ -59,20 +59,17 @@
           <legend class="fieldset-heading owner-contacts__heading">Контактные данные (владельца кота)</legend>
           <label class="input">
             <span class="input__label">E-mail:*</span>
-            <input type="email" class="input__field" placeholder="kuklachev@gmail.com" required>
+            <input type="email" class="input__field" name="e-mail" placeholder="kuklachev@gmail.com" required>
           </label>
           <label class="input">
             <span class="input__label">Телефон:*</span>
-            <input type="text" class="input__field" placeholder="8 (960) 900-60-90" required>
+            <input type="tel" class="input__field" name="phone-number" placeholder="8 (960) 900-60-90" required>
           </label>
         </fieldset>
 
         <fieldset class="note">
           <legend class="fieldset-heading note__heading">Комментарий</legend>
-          <label class="input">
-            <span class="input__label">E-mail:*</span>
-            <textarea class="input__field" placeholder="Расскажите обо всех повадках кота" rows="4"></textarea>
-          </label>
+          <textarea class="input__field" name="note" placeholder="Расскажите обо всех повадках кота" rows="4"></textarea>
         </fieldset>
 
         <fieldset class="extra">

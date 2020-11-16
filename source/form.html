@@ -6,25 +6,31 @@
   </head>
   <body>
     <header class="page-header">
-      <h1 class="visually-hidden">Cat Energy</h1>
       <a href="index.html" class="logo-container">
         <img src="https://via.placeholder.com/34x38" alt="Логотип" class="logo">
         <img src="https://via.placeholder.com/101x18" alt="Cat Energy" class="logo-text">
       </a>
       <button class="nav-button" type="button" aria-label="Меню"></button>
       <ul class="nav">
-        <li class="nav__item nav__item--active">Главная</li>
-        <li class="nav__item">Каталог продукции</li>
-        <li class="nav__item">Подбор программы</li>
+        <li class="nav__item">
+          <a href="index.html" class="nav__link">Главная</a>
+        </li>
+        <li class="nav__item">
+          <a href="#" class="nav__link">Каталог продукции</a>
+        </li>
+        <li class="nav__item nav__item--active">
+          <span class="nav__link">Подбор программы</span>
+        </li>
       </ul>
     </header>
 
     <main class="page-content">
       <form class="program-form" action="https://echo.htmlacademy.ru" method="POST">
-        <h2 class="heading program-form__heading">Подбор программы</h2>
+        <h1 class="heading program-form__heading">Подбор программы</h1>
         <p class="program-form__description">Заполните анкету, и мы подберем программу питания для вашего кота</p>
-        <section class="program-form__cat-info">
-          <h3 class="visually-hidden">Информация о питомце:</h3>
+
+        <fieldset class="fieldset">
+          <legend class="visually-hidden">Информация о питомце:</legend>
           <label class="input">
             <span class="input__label">Имя:*</span>
             <input type="text" class="input__field" name="name" placeholder="Барсик" required>
@@ -37,10 +43,10 @@
             <span class="input__label">Возраст (лет):</span>
             <input type="text" class="input__field" name="age" placeholder="7">
           </label>
-        </section>
+        </fieldset>
 
-        <section class="program-form__program-choice">
-          <h3 class="visually-hidden">Выбранная программа:</h3>
+        <fieldset class="fieldset">
+          <legend class="visually-hidden">Выбранная программа:</legend>
           <label class="radio">
             <input type="radio" class="radio__field" name="program" value="slimming" checked>
             <span class="radio__label">Похудение</span>
@@ -53,10 +59,10 @@
             <input type="radio" class="radio__field" name="program" value="need-advice">
             <span class="radio__label">Не знаю (нужен ваш совет)</span>
           </label>
-        </section>
+        </fieldset>
 
-        <fieldset class="owner-contacts">
-          <legend class="fieldset-heading owner-contacts__heading">Контактные данные (владельца кота)</legend>
+        <fieldset class="fieldset--highlighted ">
+          <legend class="fieldset-heading">Контактные данные (владельца кота)</legend>
           <label class="input">
             <span class="input__label">E-mail:*</span>
             <input type="email" class="input__field" name="e-mail" placeholder="kuklachev@gmail.com" required>
@@ -67,13 +73,13 @@
           </label>
         </fieldset>
 
-        <fieldset class="note">
-          <legend class="fieldset-heading note__heading">Комментарий</legend>
-          <textarea class="input__field" name="note" placeholder="Расскажите обо всех повадках кота" rows="4"></textarea>
-        </fieldset>
+        <label class="fieldset--highlighted note">
+          <span class="fieldset-heading note__heading">Комментарий</span>
+          <textarea class="textarea note__field" name="note" placeholder="Расскажите обо всех повадках кота" rows="4"></textarea>
+        </label>
 
-        <fieldset class="extra">
-          <legend class="fieldset-heading extra__heading">Дополнительно</legend>
+        <fieldset class="fieldset--highlighted">
+          <legend class="fieldset-heading">Дополнительно</legend>
           <label class="checkbox">
             <input type="checkbox" class="checkbox__field" name="sweetener" value="sweetener" checked>
             <span class="checkbox__label">Cахарозаменитель</span>
@@ -96,9 +102,9 @@
 
         <span class="program-form__footnote">* — Обязательные поля</span>
       </form>
+    </main>
 
-      <!-- Не заметила ранее, что раздел с адресом используется на всех страницах
-      Получается, имеет смысл перенести его в футер? -->
+    <footer class="page-footer">
       <section class="address">
         <h2 class="visually-hidden">Наш адрес</h2>
         <div class="address__container">
@@ -110,9 +116,7 @@
         </div>
         <img src="https://via.placeholder.com/320x362" alt="Расположение на карте" class="map">
       </section>
-    </main>
 
-    <footer class="page-footer">
       <img src="https://via.placeholder.com/128x24" alt="Cat Energy" class="logo-text">
       <section class="social">
         <h2 class="visually-hidden">Мы в социальных сетях</h2>

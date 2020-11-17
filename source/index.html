@@ -13,9 +13,15 @@
       </a>
       <button class="nav-button" type="button" aria-label="Меню"></button>
       <ul class="nav">
-        <li class="nav__item nav__item--active">Главная</li>
-        <li class="nav__item">Каталог продукции</li>
-        <li class="nav__item">Подбор программы</li>
+        <li class="nav__item nav__item--active">
+          <a class="nav__link">Главная</a>
+        </li>
+        <li class="nav__item">
+          <a href="#" class="nav__link">Каталог продукции</a>
+        </li>
+        <li class="nav__item">
+          <a href="form.html" class="nav__link">Подбор программы</a>
+        </li>
       </ul>
     </header>
 
@@ -24,12 +30,12 @@
         <h2 class="heading main-screen__heading">Функциональное питание для котов</h2>
         <p class="main-screen__slogan">Занялся собой? Займись котом!</p>
         <div class="main-screen__image"></div>
-        <a href="#" class="button main-screen__button">Подобрать программу</a>
+        <a href="form.html" class="button main-screen__button">Подобрать программу</a>
       </section>
 
-      <section class="programs-section">
+      <section class="programs">
         <h2 class="visually-hidden">Программы</h2>
-        <ul class="programs">
+        <ul class="programs__list">
           <li class="programs__item">
             <article class="program">
               <div class="program__image"></div>
@@ -57,26 +63,26 @@
 
       <section class="how-it-works">
         <h2 class="heading">Как это работает</h2>
-        <ul class="features">
-          <li class="features__item">
+        <ul class="how-it-works__list">
+          <li class="how-it-works__item">
             <div class="feature">
               <div class="feature__image"></div>
               <p class="text feature__description">Функциональное питание содержит только полезные питательные вещества.</p>
             </div>
           </li>
-          <li class="features__item">
+          <li class="how-it-works__item">
             <div class="feature">
               <div class="feature__image"></div>
               <p class="text feature__description">Выпускается в виде порошка, который нужно лишь залить кипятком и готово.</p>
             </div>
           </li>
-          <li class="features__item">
+          <li class="how-it-works__item">
             <div class="feature">
               <div class="feature__image"></div>
               <p class="text feature__description">Замените один-два приема обычной еды на наше функциональное питание.</p>
             </div>
           </li>
-          <li class="features__item">
+          <li class="how-it-works__item">
             <div class="feature">
               <div class="feature__image"></div>
               <p class="text feature__description">Уже через месяц наслаждайтесь изменениями к лучшему вашего питомца!</p>
@@ -88,22 +94,18 @@
       <section class="example">
         <h2 class="heading">Живой пример</h2>
         <p class="text example__text">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.</p>
-        <section class="result-section">
+        <section class="results">
           <h3 class="visually-hidden">Результат</h3>
-          <ul class="results">
-            <li class="results__item">
-              <div class="result">
-                <div class="result__main-info">5 кг</div>
-                <div class="result__additional-info">снижение веса</div>
-              </div>
-            </li>
-            <li class="results__item">
-              <div class="result">
-                <div class="result__main-info">60 дней</div>
-                <div class="result__additional-info">затрачено времени</div>
-              </div>
-            </li>
-          </ul>
+          <dl class="results__list">
+            <div class="results__item">
+              <dt class="results__main-info">5 кг</dt>
+              <dd class="results__additional-info">снижение веса</dd>
+            </div>
+            <div class="results__item">
+              <dt class="results__main-info">60 дней</dt>
+              <dd class="results__additional-info">затрачено времени</dd>
+            </div>
+          </dl>
           <p class="expenses">
             <span class="expenses__text">Затраты на питание:</span>
             <span class="expenses__value">15 000 РУБ.</span>
@@ -115,29 +117,29 @@
             <div class="slider-picture__right"></div>
           </div>
           <div class="slider">
-            <span class="slider__text-left">Было</span>
-            <div class="slider-line">
-              <div class="slider-line__marker"></div>
+            <button type="button" class="slider__text-left">Было</button>
+            <div class="slider__line">
+              <div class="slider__marker"></div>
             </div>
-            <span class="slider__text-right">Стало</span>
+            <button type="button" class="slider__text-right">Стало</button>
           </div>
         </div>
       </section>
+    </main>
 
-      <section class="address-section">
+    <footer class="page-footer">
+      <section class="address">
         <h2 class="visually-hidden">Наш адрес</h2>
-        <div class="address-container">
-          <p class="address-container__invitation">Приглашаем к сотрудничеству дилеров!</p>
-          <p class="address">
+        <div class="address__container">
+          <p class="address__invitation">Приглашаем к сотрудничеству дилеров!</p>
+          <p class="text address__text">
             <span class="address__street">ул. Большая Конюшенная, д. 19/8</span>
             <span class="address__city">Санкт-Петербург</span>
           </p>
         </div>
         <img src="https://via.placeholder.com/320x362" alt="Расположение на карте" class="map">
       </section>
-    </main>
 
-    <footer class="page-footer">
       <img src="https://via.placeholder.com/128x24" alt="Cat Energy" class="logo-text">
       <section class="social">
         <h2 class="visually-hidden">Мы в социальных сетях</h2>
@@ -160,7 +162,7 @@
         </ul>
       </section>
       <a href="https://htmlacademy.ru/" class="credits">
-        <p class="credits__author">HTML Academy</p>
+        <span class="credits__author">HTML Academy</span>
         <img src="https://via.placeholder.com/27x34" alt="Логотип HTML Academy" class="credits__logo">
       </a>
     </footer>

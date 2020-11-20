@@ -1,5 +1,5 @@
 @font-face {
-  font-family: "Oswald Regular", Helvetica, sans-serif;
+  font-family: "Oswald Regular", "Helvetica", sans-serif;
   src:
     local("Oswald"),
     local("Oswald Regular"),
@@ -8,7 +8,7 @@
 }
 
 @font-face {
-  font-family: "Oswald Medium", Helvetica, sans-serif;
+  font-family: "Oswald Medium", "Helvetica", sans-serif;
   src:
     local("Oswald Medium"),
     url("/source/fonts/oswaldmedium.woff") format("woff"),

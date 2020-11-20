@@ -1,7 +1,7 @@
 @import "../common/colors.scss";
 
 .results__main-info {
-  font-family: "Oswald Regular", Helvetica, sans-serif;
+  font-family: "Oswald Regular", "Helvetica", sans-serif;
   font-size: 24px;
   line-height: 24px;
   font-weight: 400;
@@ -9,7 +9,7 @@
 }
 
 .results__additional-info {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Arial", "Helvetica", sans-serif;
   font-size: 12px;
   line-height: 12px;
   font-weight: 400;

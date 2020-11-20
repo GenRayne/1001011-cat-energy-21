@@ -10,13 +10,7 @@
 
   background-image:
     url("../../img/d4c0fe600dd690a42aaf623045ebe148.png"),
-    linear-gradient(
-      to bottom,
-      $primary-opaque,
-      $primary-opaque $cat-height + $cat-y-position,
-      transparent $cat-height + $cat-y-position,
-      transparent
-    ),
+    linear-gradient(to bottom, $primary-opaque, $primary-opaque $cat-height + $cat-y-position, transparent $cat-height + $cat-y-position, transparent),
     url("../../img/4570a4a08306b2efdaf0011db30cbec6-sm.jpg");
   background-repeat:
     no-repeat,
@@ -37,7 +31,7 @@
 }
 
 .main-screen__slogan {
-  font-family: "Oswald Regular", Helvetica, sans-serif;
+  font-family: "Oswald Regular", "Helvetica", sans-serif;
   font-size: 14px;
   line-height: 14px;
   font-weight: 400;

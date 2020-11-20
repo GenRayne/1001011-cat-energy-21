@@ -1,0 +1,10 @@
+@import "../common/colors.scss";
+
+.example {
+  padding: 30px 20px;
+  background-color: $grey-base-2;
+}
+
+.example__heading {
+  margin-bottom: 30px;
+}

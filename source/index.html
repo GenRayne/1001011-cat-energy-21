@@ -8,11 +8,13 @@
   <body>
     <header class="page-header">
       <h1 class="visually-hidden">Cat Energy</h1>
-      <a class="logo-container">
-        <img src="https://via.placeholder.com/34x38" alt="Логотип" class="logo">
-        <img src="https://via.placeholder.com/101x18" alt="Cat Energy" class="logo-text">
-      </a>
-      <button class="nav-button" type="button" aria-label="Меню"></button>
+      <div class="page-header__top-panel">
+        <a class="logo-container">
+          <img src="https://via.placeholder.com/34x38" alt="Логотип" class="logo">
+          <img src="https://via.placeholder.com/101x18" alt="Cat Energy" class="logo-text">
+        </a>
+        <button class="nav-button" type="button" aria-label="Меню"></button>
+      </div>
       <ul class="nav">
         <li class="nav__item">
           <a class="nav__link nav__link--active">Главная</a>
@@ -30,7 +32,6 @@
       <section class="main-screen">
         <h2 class="heading heading--inverted main-screen__heading">Функциональное питание для котов</h2>
         <p class="main-screen__slogan">Занялся собой? Займись котом!</p>
-        <div class="main-screen__image"></div>
         <a href="form.html" class="button main-screen__button">Подобрать программу</a>
       </section>
 
@@ -63,7 +64,7 @@
       </section>
 
       <section class="how-it-works">
-        <h2 class="heading">Как это работает</h2>
+        <h2 class="heading how-it-works__heading">Как это работает</h2>
         <ul class="how-it-works__list">
           <li class="how-it-works__item">
             <div class="feature">
@@ -93,7 +94,7 @@
       </section>
 
       <section class="example">
-        <h2 class="heading">Живой пример</h2>
+        <h2 class="heading example__heading">Живой пример</h2>
         <p class="text example__text">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.</p>
         <section class="results">
           <h3 class="visually-hidden">Результат</h3>
@@ -118,11 +119,11 @@
             <div class="slider-picture__right"></div>
           </div>
           <div class="slider">
-            <button type="button" class="slider__text-left">Было</button>
+            <button type="button" class="slider__text">Было</button>
             <div class="slider__line">
               <div class="slider__marker"></div>
             </div>
-            <button type="button" class="slider__text-right">Стало</button>
+            <button type="button" class="slider__text">Стало</button>
           </div>
         </div>
       </section>
@@ -140,32 +141,33 @@
         </div>
         <img src="https://via.placeholder.com/320x362" alt="Расположение на карте" class="map">
       </section>
-
-      <img src="https://via.placeholder.com/128x24" alt="Cat Energy" class="logo-text">
-      <section class="social">
-        <h2 class="visually-hidden">Мы в социальных сетях</h2>
-        <ul class="social__list">
-          <li class="social__item">
-            <a href="https://vk.com/" class="social__icon">
-              <span class="visually-hidden">Вконтакте</span>
-            </a>
-          </li>
-          <li class="social__item">
-            <a href="https://www.instagram.com/" class="social__icon">
-              <span class="visually-hidden">Инстаграм</span>
-            </a>
-          </li>
-          <li class="social__item">
-            <a href="https://www.facebook.com/" class="social__icon">
-              <span class="visually-hidden">Фейсбук</span>
-            </a>
-          </li>
-        </ul>
-      </section>
-      <a href="https://htmlacademy.ru/" class="credits">
-        <span class="credits__author">HTML Academy</span>
-        <img src="https://via.placeholder.com/27x34" alt="Логотип HTML Academy" class="credits__logo">
-      </a>
+      <div class="page-footer__bottom-container">
+        <img src="https://via.placeholder.com/128x24" alt="Cat Energy" class="logo-text">
+        <section class="social">
+          <h2 class="visually-hidden">Мы в социальных сетях</h2>
+          <ul class="social__list">
+            <li class="social__item">
+              <a href="https://vk.com/" class="social__icon">
+                <span class="visually-hidden">Вконтакте</span>
+              </a>
+            </li>
+            <li class="social__item">
+              <a href="https://www.instagram.com/" class="social__icon">
+                <span class="visually-hidden">Инстаграм</span>
+              </a>
+            </li>
+            <li class="social__item">
+              <a href="https://www.facebook.com/" class="social__icon">
+                <span class="visually-hidden">Фейсбук</span>
+              </a>
+            </li>
+          </ul>
+        </section>
+        <a href="https://htmlacademy.ru/" class="credits">
+          <span class="credits__author">HTML Academy</span>
+          <img src="https://via.placeholder.com/27x34" alt="Логотип HTML Academy" class="credits__logo">
+        </a>
+      </div>
     </footer>
   </body>
 </html>

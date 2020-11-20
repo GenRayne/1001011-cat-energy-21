@@ -2,13 +2,18 @@ $white: #FFFFFF;
 
 $grey-light: #F2F2F2;
 $grey-base: #EBEBEB;
+$grey-base-2: #EAEAEA;
 $grey-dark: #CDCDCD;
 
 $black-light: #666666;
 $black-base: #444444;
 $black-dark: #222222;
+$black-darkest: #111111;
 $black: #000000;
 
 $error: #FF8282;
 $primary-base: #68B738;
 $primary-dark: #5EAA2F;
+$primary-opaque: transparentize($primary-base, 0.15);
+
+$border-color: #E6E6E6;

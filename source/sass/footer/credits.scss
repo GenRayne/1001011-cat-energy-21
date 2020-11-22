@@ -1,7 +1,10 @@
 @import "../global/colors.scss";
 
+.credits {
+  text-decoration: none;
+}
+
 .credits__author {
-  font-family: "Arial", "Helvetica", sans-serif;
   font-size: 16px;
   line-height: auto;
   font-weight: 400;

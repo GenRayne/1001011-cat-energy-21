@@ -1,0 +1,15 @@
+@import "../global/colors.scss";
+
+.button {
+  padding: 11px 16px 10px;
+
+  font-family: "Oswald", "Helvetica", sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 400;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: $white;
+
+  background-color: $primary-base;
+}

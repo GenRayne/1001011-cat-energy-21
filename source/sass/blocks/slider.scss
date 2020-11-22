@@ -1,0 +1,13 @@
+@import "../global/colors.scss";
+
+.slider__text {
+  padding: 0;
+  font-family: "Oswald", "Helvetica", sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: $black;
+  background-color: transparent;
+  border: none;
+}

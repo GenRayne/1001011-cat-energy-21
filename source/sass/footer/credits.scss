@@ -1,0 +1,12 @@
+@import "../global/colors.scss";
+
+.credits {
+  text-decoration: none;
+}
+
+.credits__author {
+  font-size: 16px;
+  line-height: auto;
+  font-weight: 400;
+  color: $black-base;
+}

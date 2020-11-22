@@ -1,0 +1,23 @@
+@import "../global/colors.scss";
+
+.nav {
+  margin: 0;
+  padding: 0;
+}
+
+.nav__item {
+  list-style: none;
+}
+
+.nav__link {
+  display: block;
+  padding: 24px;
+  font-family: "Oswald", "Helvetica", sans-serif;
+  font-size: 20px;
+  line-height: 20px;
+  font-weight: 500;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: $black;
+  border-top: thin solid $border-color;
+}

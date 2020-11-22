@@ -1,0 +1,14 @@
+@import "../global/colors.scss";
+
+.heading {
+  margin: 0;
+  font-family: "Oswald", "Helvetica", sans-serif;
+  font-size: 36px;
+  line-height: 40px;
+  font-weight: 400;
+  color: $black;
+
+  &--inverted {
+    color: $white;
+  }
+}

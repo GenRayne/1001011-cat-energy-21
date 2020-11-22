@@ -1,0 +1,39 @@
+@import "../global/colors.scss";
+
+.main-screen {
+  $cat-height: 302px;
+  $cat-y-position: -20px;
+
+  padding: 27px 36px;
+  min-height: 480px;
+
+  background-image:
+    url("../../img/d4c0fe600dd690a42aaf623045ebe148.png"),
+    linear-gradient(to bottom, $primary-opaque, $primary-opaque $cat-height + $cat-y-position, transparent $cat-height + $cat-y-position, transparent),
+    url("../../img/4570a4a08306b2efdaf0011db30cbec6-sm.jpg");
+  background-repeat:
+    no-repeat,
+    no-repeat,
+    no-repeat;
+  background-size:
+    280px,
+    auto $cat-height,
+    auto $cat-height;
+  background-position:
+    70px 145px,
+    0 0,
+    -50px $cat-y-position;
+}
+
+.main-screen__heading {
+  margin-bottom: 25px;
+}
+
+.main-screen__slogan {
+  font-family: "Oswald", "Helvetica", sans-serif;
+  font-size: 14px;
+  line-height: 14px;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: $white;
+}

@@ -1,1 +1,39 @@
-// Начните писать стили здесь
+// global
+@import "./global/normalize.scss";
+@import "./global/colors.scss";
+@import "./global/fonts.scss";
+@import "./global/global.scss";
+
+// common
+@import "./common/button.scss";
+@import "./common/heading.scss";
+@import "./common/logo-container.scss";
+@import "./common/logo-text.scss";
+@import "./common/logo.scss";
+@import "./common/page-content.scss";
+@import "./common/text.scss";
+@import "./common/visually-hidden.scss";
+
+// footer
+@import "./footer/address.scss";
+@import "./footer/credits.scss";
+@import "./footer/page-footer.scss";
+@import "./footer/social.scss";
+
+// header
+@import "./header/nav-button.scss";
+@import "./header/nav.scss";
+@import "./header/page-header.scss";
+
+// other blocks
+@import "./blocks/example.scss";
+@import "./blocks/expenses.scss";
+@import "./blocks/feature.scss";
+@import "./blocks/how-it-works.scss";
+@import "./blocks/main-screen.scss";
+@import "./blocks/program.scss";
+@import "./blocks/programs.scss";
+@import "./blocks/results.scss";
+@import "./blocks/slider-container.scss";
+@import "./blocks/slider-picture.scss";
+@import "./blocks/slider.scss";

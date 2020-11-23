@@ -26,14 +26,22 @@
 @import "./header/page-header.scss";
 
 // other blocks
+@import "./blocks/checkbox.scss";
 @import "./blocks/example.scss";
 @import "./blocks/expenses.scss";
 @import "./blocks/feature.scss";
+@import "./blocks/fieldset.scss";
+@import "./blocks/fieldset-heading.scss";
 @import "./blocks/how-it-works.scss";
+@import "./blocks/input.scss";
 @import "./blocks/main-screen.scss";
+@import "./blocks/note.scss";
 @import "./blocks/program.scss";
 @import "./blocks/programs.scss";
+@import "./blocks/program-form.scss";
+@import "./blocks/radio.scss";
 @import "./blocks/results.scss";
 @import "./blocks/slider-container.scss";
 @import "./blocks/slider-picture.scss";
 @import "./blocks/slider.scss";
+@import "./blocks/textarea.scss";

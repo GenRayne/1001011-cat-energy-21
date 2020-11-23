@@ -3,6 +3,10 @@
 .address__container {
   padding: 30px 20px;
   background-color: $white;
+
+  &--color-dim {
+    background-color: $grey-light;
+  }
 }
 
 .address__invitation {

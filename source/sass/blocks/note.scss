@@ -1,0 +1,24 @@
+@import "../global/colors.scss";
+
+.note {
+  position: relative;
+  display: block;
+}
+
+.note__heading {
+  display: flex;
+  margin-bottom: 20px;
+  padding: 0;
+
+  &::after {
+    content: "";
+    position: relative;
+    top: 15px;
+    right: 0;
+    margin-left: 20px;
+    display: block;
+    width: 100%;
+    height: 2px;
+    background-color: $primary-base;
+  }
+}

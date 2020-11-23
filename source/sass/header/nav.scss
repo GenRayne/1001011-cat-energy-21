@@ -7,6 +7,11 @@
 
 .nav__item {
   list-style: none;
+  border-top: thin solid $border-color;
+
+  &:last-child {
+    border-bottom: thin solid $border-color;
+  }
 }
 
 .nav__link {
@@ -19,5 +24,4 @@
   text-decoration: none;
   text-transform: uppercase;
   color: $black;
-  border-top: thin solid $border-color;
 }

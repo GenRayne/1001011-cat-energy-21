@@ -1,0 +1,25 @@
+@import "../global/colors.scss";
+
+.fieldset {
+  padding: 20px;
+  padding-top: 0;
+  border: none;
+  border-bottom: thin solid $border-color;
+
+  &--highlighted {
+    padding: 0;
+    padding-top: 20px;
+    border: none;
+    border-top: 2px solid $primary-base;
+  }
+}
+
+.fieldset__input,
+.fieldset__checkbox,
+.fieldset__radio {
+  margin-bottom: 14px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}

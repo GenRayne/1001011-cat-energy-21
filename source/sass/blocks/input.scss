@@ -1,0 +1,36 @@
+@import "../global/colors.scss";
+
+.input {
+  display: flex;
+  align-items: center;
+}
+
+.input__label {
+  display: inline-block;
+  margin-right: 14px;
+
+  font-family: "Oswald", "Helvetica", sans-serif;
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: $black-base;
+}
+
+.input__field {
+  padding: 13px 15px;
+  flex-grow: 1;
+
+  font-family: "Oswald", "Helvetica", sans-serif;
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: $black-base;
+
+  border: thin solid $field-border-color;
+
+  &--with-icon {
+    border: thin solid $grey-dark;
+  }
+}

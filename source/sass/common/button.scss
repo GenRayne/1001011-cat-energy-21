@@ -1,6 +1,7 @@
 @import "../global/colors.scss";
 
 .button {
+  display: inline-block;
   padding: 11px 16px 10px;
 
   font-family: "Oswald", "Helvetica", sans-serif;
@@ -9,8 +10,15 @@
   font-weight: 400;
   text-decoration: none;
   text-transform: uppercase;
+  text-align: center;
   color: $white;
 
   background-color: $primary-base;
   border: none;
+
+  &--secondary {
+    background-color: $grey-light;
+    color: $black-base;
+    line-height: 18px;
+  }
 }

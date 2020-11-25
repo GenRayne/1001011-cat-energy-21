@@ -1,11 +1,11 @@
 @import "../global/colors.scss";
 
-.note {
+.pseudo-fieldset {
   position: relative;
   display: block;
 }
 
-.note__heading {
+.pseudo-fieldset__heading {
   display: flex;
   margin-bottom: 20px;
   padding: 0;
@@ -21,4 +21,8 @@
     height: 2px;
     background-color: $primary-base;
   }
+}
+
+.pseudo-fieldset__heading-text {
+  flex-shrink: 0;
 }

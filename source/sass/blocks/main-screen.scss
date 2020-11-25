@@ -4,13 +4,13 @@
   $cat-height: 302px;
   $cat-y-position: -20px;
 
-  padding: 27px 36px;
+  padding: 27px 20px;
   min-height: 480px;
 
   background-image:
-    url("../../img/d4c0fe600dd690a42aaf623045ebe148.png"),
+    url("../img/d4c0fe600dd690a42aaf623045ebe148.png"),
     linear-gradient(to bottom, $primary-opaque, $primary-opaque $cat-height + $cat-y-position, transparent $cat-height + $cat-y-position, transparent),
-    url("../../img/4570a4a08306b2efdaf0011db30cbec6-sm.jpg");
+    url("../img/4570a4a08306b2efdaf0011db30cbec6-sm.jpg");
   background-repeat:
     no-repeat,
     no-repeat,

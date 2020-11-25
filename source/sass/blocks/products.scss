@@ -1,0 +1,15 @@
+@import "../global/colors.scss";
+
+.products {
+  list-style: none;
+  padding: 0;
+}
+
+.products__item {
+  padding: 24px 20px;
+  border-bottom: thin solid $border-color;
+
+  &:first-child {
+    border-top: thin solid $border-color;
+  }
+}

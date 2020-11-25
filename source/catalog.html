@@ -27,8 +27,8 @@
       </ul>
     </header>
 
-    <main class="page-content">
-      <h1 class="heading">Каталог продукции</h1>
+    <main class="page-content catalog">
+      <h1 class="heading catalog__heading">Каталог продукции</h1>
       <ul class="products">
         <li class="products__item">
           <article class="product">
@@ -68,7 +68,7 @@
                 </tr>
               </table>
             </div>
-            <a href="#" class="button">Заказать</a>
+            <a href="#" class="button product__button">Заказать</a>
           </article>
         </li>
         <li class="products__item">
@@ -109,7 +109,7 @@
                 </tr>
               </table>
             </div>
-            <a href="#" class="button">Заказать</a>
+            <a href="#" class="button product__button">Заказать</a>
           </article>
         </li>
         <li class="products__item">
@@ -150,7 +150,7 @@
                 </tr>
               </table>
             </div>
-            <a href="#" class="button">Заказать</a>
+            <a href="#" class="button product__button">Заказать</a>
           </article>
         </li>
         <li class="products__item">
@@ -191,7 +191,7 @@
                 </tr>
               </table>
             </div>
-            <a href="#" class="button">Заказать</a>
+            <a href="#" class="button product__button">Заказать</a>
           </article>
         </li>
         <li class="products__item">
@@ -232,7 +232,7 @@
                 </tr>
               </table>
             </div>
-            <a href="#" class="button">Заказать</a>
+            <a href="#" class="button product__button">Заказать</a>
           </article>
         </li>
         <li class="products__item">
@@ -273,7 +273,7 @@
                 </tr>
               </table>
             </div>
-            <a href="#" class="button">Заказать</a>
+            <a href="#" class="button product__button">Заказать</a>
           </article>
         </li>
         <li class="products__item">
@@ -314,7 +314,7 @@
                 </tr>
               </table>
             </div>
-            <a href="#" class="button">Заказать</a>
+            <a href="#" class="button product__button">Заказать</a>
           </article>
         </li>
         <li class="products__item">
@@ -322,45 +322,49 @@
             <div class="product__more-icon"></div>
             <h2 class="product__more-heading">Показать еще 100500 товаров</h2>
             <p class="product__more-description">На самом деле вкусов гораздо больше!</p>
-            <a href="#" class="button button--secondary">Показать все</a>
+            <a href="#" class="button button--secondary product__button">Показать все</a>
           </article>
         </li>
       </ul>
 
-      <section class="products-extra">
-        <h2 class="products-extra__main-heading">Дополнительные товары</h2>
+      <section class="products-extra pseudo-fieldset">
+        <h2 class="products-extra__main-heading pseudo-fieldset__heading fieldset-heading">
+          <span class="pseudo-fieldset__heading-text">Дополнительные товары</span>
+        </h2>
         <ul class="products-extra__list">
           <li class="products-extra__item">
             <h3 class="products-extra__heading">Сахарозаменитель</h3>
             <span class="products-extra__quantity">1 упаковка (100 г)</span>
-            <span class="price">200 Р.</span>
-            <a href="#" class="button">Заказать</a>
+            <span class="products-extra__price">200 Р.</span>
+            <a href="#" class="button products-extra__button">Заказать</a>
           </li>
           <li class="products-extra__item">
             <h3 class="products-extra__heading">Питьевая вода</h3>
             <span class="products-extra__quantity">5 литров</span>
-            <span class="price">50 Р.</span>
-            <a href="#" class="button">Заказать</a>
+            <span class="products-extra__price">50 Р.</span>
+            <a href="#" class="button products-extra__button">Заказать</a>
           </li>
           <li class="products-extra__item">
             <h3 class="products-extra__heading">Молоко</h3>
             <span class="products-extra__quantity">1 литр</span>
-            <span class="price">100 Р.</span>
-            <a href="#" class="button">Заказать</a>
+            <span class="products-extra__price">100 Р.</span>
+            <a href="#" class="button products-extra__button">Заказать</a>
           </li>
           <li class="products-extra__item">
             <h3 class="products-extra__heading">Витамины</h3>
             <span class="products-extra__quantity">1 упаковка (30 г)</span>
-            <span class="price">300 Р.</span>
-            <a href="#" class="button">Заказать</a>
+            <span class="products-extra__price">300 Р.</span>
+            <a href="#" class="button products-extra__button">Заказать</a>
           </li>
         </ul>
       </section>
 
       <section class="special-offer">
-        <h2 class="visually-hidden">Специальное предложение</h2>
-        <div class="special-offer__icon"></div>
-        <p class="special-offer__description">Закажите все и получите чехол для кота в подарок!</p>
+        <div class="special-offer__background-container">
+          <h2 class="visually-hidden">Специальное предложение</h2>
+          <div class="special-offer__icon"></div>
+          <p class="special-offer__description">Закажите все<br> и получите чехол для<br> кота в подарок!</p>
+        </div>
       </section>
     </main>
 

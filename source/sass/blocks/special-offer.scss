@@ -1,0 +1,35 @@
+@import "../global/colors.scss";
+
+.special-offer {
+  padding: 0 20px;
+  margin: 39px 0 35px;
+}
+
+.special-offer__background-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 60px 20px 26px;
+  width: 280px;
+  min-height: 289px;
+
+  background-color: $primary-base;
+  background-image: url("../img/gift-photo-mobile 1-sm.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.special-offer__icon {
+  width: 78px;
+  height: 80px;
+  background-image: url("../img/icon_gift.svg");
+  background-size: cover;
+}
+
+.special-offer__description {
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  color: $white;
+}

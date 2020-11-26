@@ -1,7 +1,9 @@
+@import "../global/viewports.scss";
 @import "../global/colors.scss";
 
 .button {
-  display: inline-block;
+  display: block;
+  flex-grow: 0;
   padding: 11px 16px 10px;
 
   font-family: "Oswald", "Helvetica", sans-serif;
@@ -20,5 +22,13 @@
     background-color: $grey-light;
     color: $black-base;
     line-height: 18px;
+  }
+
+  @media (min-width: $tablet-width) {
+    display: inline-block;
+    padding: 18px 26px;
+    max-width: fit-content;
+    font-size: 20px;
+    line-height: 1;
   }
 }

@@ -1,3 +1,9 @@
+@import "../global/viewports.scss";
+
 .logo {
   width: 34px;
+
+  @media (min-width: $tablet-width) {
+    width: 60px;
+  }
 }

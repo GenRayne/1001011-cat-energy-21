@@ -1,7 +1,15 @@
 @import "../global/colors.scss";
 
 .credits {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
   text-decoration: none;
+
+  @media (min-width: $tablet-width) {
+    justify-content: flex-end;
+  }
 }
 
 .credits__author {
@@ -9,4 +17,6 @@
   line-height: 1;
   font-weight: 400;
   color: $black-base;
+
+  margin-right: 22px;
 }

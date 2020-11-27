@@ -13,26 +13,26 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-areas:
-      "head slider"
-      "desc slider"
-      "res slider";
+      "heading     slider"
+      "description slider"
+      "results     slider";
     padding: 30px 110px;
   }
 }
 
 .example__heading {
-  grid-area: head;
+  grid-area: heading;
   margin-bottom: 30px;
 }
 
 .example__text {
-  grid-area: desc;
+  grid-area: description;
   margin-bottom: 25px;
   padding-right: 3px;
 }
 
 .example__results {
-  grid-area: res;
+  grid-area: results;
   margin-bottom: 30px;
 }
 

@@ -117,29 +117,33 @@
       <section class="example">
         <h2 class="heading example__heading">Живой пример</h2>
         <p class="text example__text">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.</p>
-        <section class="results">
+        <section class="results example__results">
           <h3 class="visually-hidden">Результат</h3>
           <dl class="results__list">
             <div class="results__item">
               <dt class="results__main-info">5 кг</dt>
-              <dd class="results__additional-info">снижение веса</dd>
+              <dd class="results__additional-info-container">
+                <span class="results__additional-info">снижение веса</span>
+              </dd>
             </div>
             <div class="results__item">
               <dt class="results__main-info">60 дней</dt>
-              <dd class="results__additional-info">затрачено времени</dd>
+              <dd class="results__additional-info-container">
+                <span class="results__additional-info">затрачено времени</span>
+              </dd>
             </div>
           </dl>
-          <p class="expenses">
+          <p class="expenses results__expenses">
             <span class="expenses__text">Затраты на питание:</span>
             <span class="expenses__value">15 000 РУБ.</span>
           </p>
         </section>
-        <div class="slider-container">
+        <div class="slider-container example__slider">
           <div class="slider-picture">
             <div class="slider-picture__left"></div>
             <div class="slider-picture__right"></div>
           </div>
-          <div class="slider">
+          <div class="slider slider-container__slider">
             <button type="button" class="slider__text">Было</button>
             <div class="slider__line">
               <div class="slider__marker"></div>

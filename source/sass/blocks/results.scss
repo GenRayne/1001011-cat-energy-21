@@ -1,16 +1,92 @@
+@import "../global/viewports.scss";
 @import "../global/colors.scss";
+
+.results {
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    flex-wrap: wrap;
+    width: 366px;
+  }
+}
+
+.results__list {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 30px;
+  margin-bottom: 30px;
+
+  @media (min-width: $desktop-width) {
+    column-gap: 42px;
+  }
+}
+
+.results__item {
+  position: relative;
+  padding: 14px;
+  border: thin solid $grey-dark;
+  border-radius: 3px;
+
+  @media (min-width: $desktop-width) {
+    width: 162px;
+    height: 77px;
+  }
+}
 
 .results__main-info {
   font-family: "Oswald", "Helvetica", sans-serif;
   font-size: 24px;
   line-height: 24px;
   font-weight: 400;
+  text-transform: uppercase;
+  text-align: center;
   color: $black;
+
+  @media (min-width: $desktop-width) {
+    margin-top: 4px;
+    font-size: 30px;
+    line-height: 37px;
+  }
+}
+
+.results__additional-info-container {
+  display: block;
+
+  position: absolute;
+  bottom: -17px;
+  left: 0;
+  margin: 0;
+  width: 100%;
+
+  @media (min-width: $tablet-width) {
+    bottom: -6px;
+  }
 }
 
 .results__additional-info {
+  display: block;
+  margin: 0 auto;
+  padding: 0 14px;
+  width: 87px;
+
   font-size: 12px;
   line-height: 12px;
   font-weight: 400;
+  text-align: center;
   color: $black-base;
+  background-color: $grey-base;
+
+  @media (min-width: $tablet-width) {
+    width: fit-content;
+    font-size: 14px;
+    line-height: 14px;
+  }
+
+  @media (min-width: $tablet-width) {
+    padding: 0 10px;
+  }
 }

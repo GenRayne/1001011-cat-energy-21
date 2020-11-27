@@ -1,3 +1,4 @@
+@import "../global/viewports.scss";
 @import "../global/colors.scss";
 
 .expenses {
@@ -6,5 +7,30 @@
   line-height: 20px;
   font-weight: 400;
   text-transform: uppercase;
+  text-align: center;
   color: $black;
+
+  @media (min-width: $desktop-width) {
+    font-size: 20px;
+    line-height: 20px;
+  }
+}
+
+.expenses__text {
+  @media (min-width: $desktop-width) {
+    margin-right: 63px;
+  }
+}
+
+.expenses__text,
+.expenses__value {
+  @media (min-width: $tablet-width) {
+    display: block;
+    text-align: right;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: inline-block;
+    text-align: left;
+  }
 }

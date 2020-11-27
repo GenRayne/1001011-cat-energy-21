@@ -33,4 +33,8 @@
     column-gap: 40px;
     padding: 55px 30px;
   }
+
+  @media (min-width: $desktop-width) {
+    padding: 55px 110px;
+  }
 }

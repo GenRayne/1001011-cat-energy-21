@@ -1,5 +1,6 @@
 // global
 @import "./global/normalize.scss";
+@import "./global/viewports.scss";
 @import "./global/colors.scss";
 @import "./global/fonts.scss";
 @import "./global/global.scss";
@@ -36,7 +37,9 @@
 @import "./blocks/pseudo-fieldset.scss";
 @import "./blocks/how-it-works.scss";
 @import "./blocks/input.scss";
+@import "./blocks/index-page.scss";
 @import "./blocks/main-screen.scss";
+@import "./blocks/map.scss";
 @import "./blocks/product.scss";
 @import "./blocks/products.scss";
 @import "./blocks/products-extra.scss";

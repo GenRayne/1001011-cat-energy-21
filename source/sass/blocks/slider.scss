@@ -1,4 +1,11 @@
+@import "../global/viewports.scss";
 @import "../global/colors.scss";
+
+.slider {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
 
 .slider__text {
   padding: 0;
@@ -10,4 +17,20 @@
   color: $black;
   background-color: transparent;
   border: none;
+}
+
+.slider__line {
+  width: 45%;
+  height: 14px;
+  background-color: $white;
+  border: thin solid $grey-dark;
+  border-radius: 7px;
+
+  @media (min-width: $tablet-width) {
+    width: 76%;
+    height: 6px;
+    background-color: $slider-line-color;
+    border: none;
+    border-radius: 3px;
+  }
 }

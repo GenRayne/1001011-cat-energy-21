@@ -1,10 +1,41 @@
+@import "../global/viewports.scss";
 @import "../global/colors.scss";
 
 .example {
   padding: 30px 20px;
   background-color: $grey-base-2;
+
+  @media (min-width: $tablet-width) {
+    padding: 40px 30px 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas:
+      "heading     slider"
+      "description slider"
+      "results     slider";
+    padding: 30px 110px;
+  }
 }
 
 .example__heading {
+  grid-area: heading;
   margin-bottom: 30px;
+}
+
+.example__text {
+  grid-area: description;
+  margin-bottom: 25px;
+  padding-right: 3px;
+}
+
+.example__results {
+  grid-area: results;
+  margin-bottom: 30px;
+}
+
+.example__slider {
+  grid-area: slider;
 }

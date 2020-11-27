@@ -2,15 +2,18 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Кэт энерджи</title>
     <link rel="stylesheet" href="css/style.css">
   </head>
-  <body>
+  <body class="index-page">
     <header class="page-header">
       <h1 class="visually-hidden">Cat Energy</h1>
       <div class="page-header__top-panel">
         <a class="logo-container">
           <img src="https://via.placeholder.com/34x38" alt="Логотип" class="logo">
+        </a>
+        <a class="logo-container">
           <img src="https://via.placeholder.com/101x18" alt="Cat Energy" class="logo-text">
         </a>
         <button class="nav-button" type="button" aria-label="Меню"></button>
@@ -30,8 +33,10 @@
 
     <main class="page-content">
       <section class="main-screen">
-        <h2 class="heading heading--inverted main-screen__heading">Функциональное питание для котов</h2>
-        <p class="main-screen__slogan">Занялся собой? Займись котом!</p>
+        <div class="main-screen__heading-container">
+          <h2 class="heading heading--inverted main-screen__heading">Функциональное питание для котов</h2>
+          <p class="main-screen__slogan">Занялся собой? Займись котом!</p>
+        </div>
         <a href="form.html" class="button main-screen__button">Подобрать программу</a>
       </section>
 
@@ -69,25 +74,41 @@
           <li class="how-it-works__item">
             <div class="feature">
               <div class="feature__image"></div>
-              <p class="text feature__description">Функциональное питание содержит только полезные питательные вещества.</p>
+              <p class="text feature__description">
+                Функциональное питание<br>
+                содержит только полезные<br>
+                питательные вещества.
+              </p>
             </div>
           </li>
           <li class="how-it-works__item">
             <div class="feature">
               <div class="feature__image"></div>
-              <p class="text feature__description">Выпускается в виде порошка, который нужно лишь залить кипятком и готово.</p>
+              <p class="text feature__description">
+                Выпускается в виде порошка,<br>
+                который нужно лишь залить<br>
+                кипятком и готово.
+              </p>
             </div>
           </li>
           <li class="how-it-works__item">
             <div class="feature">
               <div class="feature__image"></div>
-              <p class="text feature__description">Замените один-два приема обычной еды на наше функциональное питание.</p>
+              <p class="text feature__description">
+                Замените один-два приема<br>
+                обычной еды на наше<br>
+                функциональное питание.
+              </p>
             </div>
           </li>
           <li class="how-it-works__item">
             <div class="feature">
               <div class="feature__image"></div>
-              <p class="text feature__description">Уже через месяц наслаждайтесь изменениями к лучшему вашего питомца!</p>
+              <p class="text feature__description">
+                Уже через месяц наслаждайтесь<br>
+                изменениями к лучшему<br>
+                вашего питомца!
+              </p>
             </div>
           </li>
         </ul>
@@ -96,29 +117,33 @@
       <section class="example">
         <h2 class="heading example__heading">Живой пример</h2>
         <p class="text example__text">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.</p>
-        <section class="results">
+        <section class="results example__results">
           <h3 class="visually-hidden">Результат</h3>
           <dl class="results__list">
             <div class="results__item">
               <dt class="results__main-info">5 кг</dt>
-              <dd class="results__additional-info">снижение веса</dd>
+              <dd class="results__additional-info-container">
+                <span class="results__additional-info">снижение веса</span>
+              </dd>
             </div>
             <div class="results__item">
               <dt class="results__main-info">60 дней</dt>
-              <dd class="results__additional-info">затрачено времени</dd>
+              <dd class="results__additional-info-container">
+                <span class="results__additional-info">затрачено времени</span>
+              </dd>
             </div>
           </dl>
-          <p class="expenses">
+          <p class="expenses results__expenses">
             <span class="expenses__text">Затраты на питание:</span>
             <span class="expenses__value">15 000 РУБ.</span>
           </p>
         </section>
-        <div class="slider-container">
+        <div class="slider-container example__slider">
           <div class="slider-picture">
             <div class="slider-picture__left"></div>
             <div class="slider-picture__right"></div>
           </div>
-          <div class="slider">
+          <div class="slider slider-container__slider">
             <button type="button" class="slider__text">Было</button>
             <div class="slider__line">
               <div class="slider__marker"></div>
@@ -133,9 +158,9 @@
       <section class="address">
         <h2 class="visually-hidden">Наш адрес</h2>
         <div class="address__container">
-          <p class="address__invitation">Приглашаем к сотрудничеству дилеров!</p>
+          <p class="address__invitation">Приглашаем<br> к сотрудничеству<br> дилеров!</p>
           <p class="text address__text">
-            <span class="address__street">ул. Большая Конюшенная, д. 19/8</span>
+            <span class="address__street">ул. Большая<br> Конюшенная, д. 19/8</span>
             <span class="address__city">Санкт-Петербург</span>
           </p>
         </div>

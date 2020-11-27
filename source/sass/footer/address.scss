@@ -1,25 +1,65 @@
+@import "../global/viewports.scss";
 @import "../global/colors.scss";
 
+.address {
+  background-color: $grey-dark;
+
+  @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas:
+      ".       map"
+      "address map"
+      "address map"
+      ".       map";
+    column-gap: 80px;
+    padding: 0 110px;
+  }
+}
+
 .address__container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-area: address;
   padding: 30px 20px;
   background-color: $white;
 
   &--color-dim {
     background-color: $grey-light;
   }
+
+  @media (min-width: $tablet-width) {
+    padding: 60px 70px;
+  }
 }
 
 .address__invitation {
   margin: 0;
   font-family: "Oswald", "Helvetica", sans-serif;
-  font-size: 18px;
-  line-height: 16px;
+  font-size: 16px;
+  line-height: 20px;
   font-weight: 400;
   text-transform: uppercase;
   color: $black-darkest;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 23px;
+  }
 }
 
 .address__text {
   margin: 0;
   line-height: 20px;
+
+  @media (min-width: $tablet-width) {
+    text-align: right;
+  }
+}
+
+.address__street {
+  @media (min-width: $tablet-width) {
+    display: block;
+    margin-bottom: 14px;
+  }
 }

@@ -1,8 +1,17 @@
+@import "../global/viewports.scss";
 @import "../global/colors.scss";
 
 .nav {
+  display: flex;
+  flex-direction: column;
   margin: 0;
   padding: 0;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+  }
 }
 
 .nav__item {
@@ -12,16 +21,43 @@
   &:last-child {
     border-bottom: thin solid $border-color;
   }
+
+  @media (min-width: $tablet-width) {
+    margin-right: 34px;
+    border: none;
+
+    &:last-child {
+      margin-right: 0;
+      border: none;
+    }
+  }
 }
 
 .nav__link {
   display: block;
-  padding: 24px;
+  padding: 23px;
   font-family: "Oswald", "Helvetica", sans-serif;
   font-size: 20px;
   line-height: 20px;
   font-weight: 500;
   text-decoration: none;
   text-transform: uppercase;
+  text-align: center;
   color: $black;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+    flex-shrink: 0;
+    flex-grow: 0;
+    padding: 14px 0;
+
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 400;
+    white-space: nowrap;
+
+    &--active {
+      border-bottom: 2px solid $primary-base;
+    }
+  }
 }

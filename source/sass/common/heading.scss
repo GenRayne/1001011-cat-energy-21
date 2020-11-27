@@ -1,3 +1,4 @@
+@import "../global/viewports.scss";
 @import "../global/colors.scss";
 
 .heading {
@@ -10,5 +11,10 @@
 
   &--inverted {
     color: $white;
+  }
+
+  @media (min-width: $tablet-width) {
+    font-size: 60px;
+    line-height: 60px;
   }
 }

@@ -1,3 +1,4 @@
+@import "../global/viewports.scss";
 @import "../global/colors.scss";
 
 .text {
@@ -6,4 +7,9 @@
   line-height: 18px;
   font-weight: 400;
   color: $black-base;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 24px;
+  }
 }

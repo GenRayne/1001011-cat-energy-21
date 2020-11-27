@@ -1,22 +1,83 @@
+@import "../global/viewports.scss";
 @import "../global/colors.scss";
 
 .program {
-  padding: 21px 22px;
+  position: relative;
+  padding: 30px 22px 6px;
   background-color: $grey-light;
+
+  @media (min-width: $tablet-width) {
+    padding: 80px 280px 50px 52px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 77px;
+    padding-right: 51px;
+  }
+}
+
+.program__image {
+  position: absolute;
+  top: 24px;
+  width: 50px;
+  height: 50px;
+  background-color: $primary-base;
+  border-radius: 50%;
+
+  @media (min-width: $tablet-width) {
+    top: calc(50% - 100px);
+    right: 62px;
+    width: 200px;
+    height: 200px;
+  }
+
+  @media (min-width: $desktop-width) {
+    top: 47px;
+    left: 52px;
+    width: 100px;
+    height: 100px;
+  }
 }
 
 .program__heading {
   margin: 0;
+  margin-bottom: 30px;
+  padding-left: 69px;
   font-family: "Oswald", "Helvetica", sans-serif;
   font-size: 24px;
   line-height: 37px;
   font-weight: 400;
+  text-transform: uppercase;
   color: $black;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 0;
+    font-size: 36px;
+    line-height: 36px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 169px;
+    padding-bottom: 70px;
+  }
 }
 
 .program__button {
-  padding: 0;
+  padding: 15px 0;
+  width: 100%;
   font-size: 16px;
+  text-align: left;
   color: $black;
   background-color: transparent;
+  border-top: thin solid #d9d9d9;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 48px;
+    font-size: 20px;
+    border: none;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 20px;
+  }
 }

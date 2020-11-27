@@ -1,0 +1,26 @@
+@import "../global/viewports.scss";
+@import "../global/colors.scss";
+
+.index-page {
+  .page-header {
+    @media (min-width: $desktop-width) {
+      position: absolute;
+      top: 64px;
+      left: 110px;
+
+      margin-right: 34px;
+      padding: 0;
+      width: calc(100% - 220px);
+    }
+  }
+
+  .nav__link {
+    @media (min-width: $desktop-width) {
+      color: $white;
+
+      &--active {
+        border-bottom: 2px solid $white;
+      }
+    }
+  }
+}

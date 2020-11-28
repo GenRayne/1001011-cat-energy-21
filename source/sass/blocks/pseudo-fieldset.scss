@@ -28,8 +28,8 @@
     }
   }
 
-  @media (min-width: $tablet-width) {
-    &::before {
+  &::before {
+    @media (min-width: $tablet-width) {
       content: "";
       position: relative;
       top: 20px;
@@ -40,6 +40,10 @@
       height: 2px;
       background-color: $primary-base;
     }
+
+    @media (min-width: $desktop-width) {
+      width: 90px;
+    }
   }
 }
 
@@ -49,8 +53,13 @@
 
 .pseudo-fieldset__inputs-container {
   padding-top: 10px;
+  padding-right: 20px;
 
   @media (min-width: $tablet-width) {
     padding: 40px 70px 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 40px 110px 0;
   }
 }

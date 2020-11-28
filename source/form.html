@@ -37,48 +37,50 @@
           <p class="program-form__description">Заполните анкету, и мы подберем<br> программу питания для вашего кота</p>
         </div>
 
-        <fieldset class="fieldset">
-          <legend class="visually-hidden">Информация о питомце:</legend>
-          <div class="fieldset__inputs-container">
-            <label class="input fieldset__input">
-              <span class="input__label">Имя:*</span>
-              <input type="text" class="input__field" name="name" placeholder="Барсик" required>
-            </label>
-            <label class="input fieldset__input">
-              <span class="input__label">Вес (кг):*</span>
-              <input type="text" class="input__field" name="weight" placeholder="7" required>
-            </label>
-            <label class="input fieldset__input">
-              <span class="input__label">Возраст (лет):</span>
-              <input type="text" class="input__field" name="age" placeholder="7">
-            </label>
-          </div>
-        </fieldset>
-
-        <fieldset class="fieldset">
-          <legend class="visually-hidden">Выбранная программа:</legend>
-          <div class="fieldset__inputs-container">
-            <div class="fieldset__bordered-box">
-              <label class="radio fieldset__radio">
-                <input type="radio" class="radio__field" name="program" value="slimming" checked>
-                <span class="radio__label">Похудение</span>
+        <div class="program-form__pet-info-container">
+          <fieldset class="fieldset">
+            <legend class="visually-hidden">Информация о питомце:</legend>
+            <div class="fieldset__inputs-container">
+              <label class="input fieldset__input">
+                <span class="input__label">Имя:*</span>
+                <input type="text" class="input__field" name="name" placeholder="Барсик" required>
               </label>
-              <label class="radio fieldset__radio">
-                <input type="radio" class="radio__field" name="program" value="weight-gain">
-                <span class="radio__label">Набор массы</span>
+              <label class="input fieldset__input">
+                <span class="input__label">Вес (кг):*</span>
+                <input type="text" class="input__field" name="weight" placeholder="7" required>
               </label>
-              <label class="radio fieldset__radio">
-                <input type="radio" class="radio__field" name="program" value="need-advice">
-                <span class="radio__label">Не знаю (нужен ваш совет)</span>
+              <label class="input fieldset__input">
+                <span class="input__label">Возраст (лет):</span>
+                <input type="text" class="input__field" name="age" placeholder="7">
               </label>
             </div>
-          </div>
-        </fieldset>
+          </fieldset>
+
+          <fieldset class="fieldset program-form__chosen-program">
+            <legend class="visually-hidden">Выбранная программа:</legend>
+            <div class="fieldset__inputs-container">
+              <div class="fieldset__bordered-box">
+                <label class="radio fieldset__radio">
+                  <input type="radio" class="radio__field" name="program" value="slimming" checked>
+                  <span class="radio__label">Похудение</span>
+                </label>
+                <label class="radio fieldset__radio">
+                  <input type="radio" class="radio__field" name="program" value="weight-gain">
+                  <span class="radio__label">Набор массы</span>
+                </label>
+                <label class="radio fieldset__radio">
+                  <input type="radio" class="radio__field" name="program" value="need-advice">
+                  <span class="radio__label">Не знаю (нужен ваш совет)</span>
+                </label>
+              </div>
+            </div>
+          </fieldset>
+        </div>
 
         <div class="program-form__bottom-container">
-          <fieldset class="fieldset fieldset--highlighted ">
+          <fieldset class="fieldset fieldset--highlighted">
             <legend class="fieldset-heading">Контактные данные (владельца кота)</legend>
-            <div class="fieldset__inputs-container">
+            <div class="fieldset__inputs-container program-form__contacts">
               <label class="input fieldset__input">
                 <span class="input__label">E-mail:*</span>
                 <input type="email" class="input__field input__field--with-icon" name="e-mail" placeholder="kuklachev@gmail.com" required>

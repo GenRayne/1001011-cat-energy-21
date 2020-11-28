@@ -1,26 +1,44 @@
+@import "../global/viewports.scss";
 @import "../global/colors.scss";
 
 .program-form {
   .fieldset,
   .pseudo-fieldset {
-    margin-bottom: 20px;
+    margin-bottom: 30px;
+
+    @media (min-width: $tablet-width) {
+      margin-bottom: 60px;
+    }
   }
 }
 
 .program-form__head-container {
   padding: 20px;
   padding-bottom: 40px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
 }
 
 .program-form__bottom-container {
   padding: 20px;
   padding-top: 0;
   padding-bottom: 32px;
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+  }
 }
 
 .program-form__heading {
   margin-bottom: 40px;
   line-height: 36px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 60px;
+  }
 }
 
 .program-form__description {
@@ -31,15 +49,38 @@
   font-weight: 400;
   text-transform: uppercase;
   color: $black;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 50px;
+  }
+}
+
+.program-form__submit-container {
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 0 70px;
+    padding-bottom: 72px;
+  }
 }
 
 .program-form__sumbit-button {
   margin-top: 14px;
   margin-bottom: 22px;
+  width: 100%;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+  }
 }
 
 .program-form__footnote {
   display: block;
   font-size: 14px;
   line-height: 16px;
+  text-align: center;
+
+  @media (min-width: $tablet-width) {
+    margin: auto 0;
+  }
 }

@@ -34,82 +34,95 @@
       <form class="program-form" action="https://echo.htmlacademy.ru" method="POST">
         <div class="program-form__head-container">
           <h1 class="heading program-form__heading">Подбор программы</h1>
-          <p class="program-form__description">Заполните анкету, и мы подберем программу питания для вашего кота</p>
+          <p class="program-form__description">Заполните анкету, и мы подберем<br> программу питания для вашего кота</p>
         </div>
 
         <fieldset class="fieldset">
           <legend class="visually-hidden">Информация о питомце:</legend>
-          <label class="input fieldset__input">
-            <span class="input__label">Имя:*</span>
-            <input type="text" class="input__field" name="name" placeholder="Барсик" required>
-          </label>
-          <label class="input fieldset__input">
-            <span class="input__label">Вес (кг):*</span>
-            <input type="text" class="input__field" name="weight" placeholder="7" required>
-          </label>
-          <label class="input fieldset__input">
-            <span class="input__label">Возраст (лет):</span>
-            <input type="text" class="input__field" name="age" placeholder="7">
-          </label>
+          <div class="fieldset__inputs-container">
+            <label class="input fieldset__input">
+              <span class="input__label">Имя:*</span>
+              <input type="text" class="input__field" name="name" placeholder="Барсик" required>
+            </label>
+            <label class="input fieldset__input">
+              <span class="input__label">Вес (кг):*</span>
+              <input type="text" class="input__field" name="weight" placeholder="7" required>
+            </label>
+            <label class="input fieldset__input">
+              <span class="input__label">Возраст (лет):</span>
+              <input type="text" class="input__field" name="age" placeholder="7">
+            </label>
+          </div>
         </fieldset>
 
         <fieldset class="fieldset">
           <legend class="visually-hidden">Выбранная программа:</legend>
-          <label class="radio fieldset__radio">
-            <input type="radio" class="radio__field" name="program" value="slimming" checked>
-            <span class="radio__label">Похудение</span>
-          </label>
-          <label class="radio fieldset__radio">
-            <input type="radio" class="radio__field" name="program" value="weight-gain">
-            <span class="radio__label">Набор массы</span>
-          </label>
-          <label class="radio fieldset__radio">
-            <input type="radio" class="radio__field" name="program" value="need-advice">
-            <span class="radio__label">Не знаю (нужен ваш совет)</span>
-          </label>
+          <div class="fieldset__inputs-container">
+            <div class="fieldset__bordered-box">
+              <label class="radio fieldset__radio">
+                <input type="radio" class="radio__field" name="program" value="slimming" checked>
+                <span class="radio__label">Похудение</span>
+              </label>
+              <label class="radio fieldset__radio">
+                <input type="radio" class="radio__field" name="program" value="weight-gain">
+                <span class="radio__label">Набор массы</span>
+              </label>
+              <label class="radio fieldset__radio">
+                <input type="radio" class="radio__field" name="program" value="need-advice">
+                <span class="radio__label">Не знаю (нужен ваш совет)</span>
+              </label>
+            </div>
+          </div>
         </fieldset>
 
         <div class="program-form__bottom-container">
           <fieldset class="fieldset fieldset--highlighted ">
             <legend class="fieldset-heading">Контактные данные (владельца кота)</legend>
-            <label class="input fieldset__input">
-              <span class="input__label">E-mail:*</span>
-              <input type="email" class="input__field input__field--with-icon" name="e-mail" placeholder="kuklachev@gmail.com" required>
-            </label>
-            <label class="input fieldset__input">
-              <span class="input__label">Телефон:*</span>
-              <input type="tel" class="input__field input__field--with-icon" name="phone-number" placeholder="8 (960) 900-60-90" required pattern="[0-9]-\([0-9]{3}\)-[0-9]{3}-[0-9]{2}-[0-9]{2}">
-            </label>
+            <div class="fieldset__inputs-container">
+              <label class="input fieldset__input">
+                <span class="input__label">E-mail:*</span>
+                <input type="email" class="input__field input__field--with-icon" name="e-mail" placeholder="kuklachev@gmail.com" required>
+              </label>
+              <label class="input fieldset__input">
+                <span class="input__label">Телефон:*</span>
+                <input type="tel" class="input__field input__field--with-icon" name="phone-number" placeholder="8 (960) 900-60-90" required pattern="[0-9]-\([0-9]{3}\)-[0-9]{3}-[0-9]{2}-[0-9]{2}">
+              </label>
+            </div>
           </fieldset>
 
           <label class="pseudo-fieldset">
             <span class="fieldset-heading pseudo-fieldset__heading">Комментарий</span>
-            <textarea class="textarea pseudo-fieldset__field" name="note" placeholder="Расскажите обо всех повадках кота" rows="4"></textarea>
+            <div class="pseudo-fieldset__inputs-container">
+              <textarea class="textarea pseudo-fieldset__field" name="note" placeholder="Расскажите обо всех повадках кота" rows="4"></textarea>
+            </div>
           </label>
 
           <fieldset class="fieldset fieldset--highlighted">
             <legend class="fieldset-heading">Дополнительно</legend>
-            <label class="checkbox fieldset__checkbox">
-              <input type="checkbox" class="checkbox__field" name="sweetener" value="sweetener" checked>
-              <span class="checkbox__label">Cахарозаменитель</span>
-            </label>
-            <label class="checkbox fieldset__checkbox">
-              <input type="checkbox" class="checkbox__field" name="water" value="water">
-              <span class="checkbox__label">Питьевая вода</span>
-            </label>
-            <label class="checkbox fieldset__checkbox">
-              <input type="checkbox" class="checkbox__field" name="milk" value="milk">
-              <span class="checkbox__label">Молоко</span>
-            </label>
-            <label class="checkbox fieldset__checkbox">
-              <input type="checkbox" class="checkbox__field" name="vitamines" value="vitamines">
-              <span class="checkbox__label">Витамины</span>
-            </label>
+            <div class="fieldset__inputs-container fieldset__checkbox-container">
+              <label class="checkbox fieldset__checkbox">
+                <input type="checkbox" class="checkbox__field" name="sweetener" value="sweetener" checked>
+                <span class="checkbox__label">Cахарозаменитель</span>
+              </label>
+              <label class="checkbox fieldset__checkbox">
+                <input type="checkbox" class="checkbox__field" name="water" value="water">
+                <span class="checkbox__label">Питьевая вода</span>
+              </label>
+              <label class="checkbox fieldset__checkbox">
+                <input type="checkbox" class="checkbox__field" name="milk" value="milk">
+                <span class="checkbox__label">Молоко</span>
+              </label>
+              <label class="checkbox fieldset__checkbox">
+                <input type="checkbox" class="checkbox__field" name="vitamines" value="vitamines">
+                <span class="checkbox__label">Витамины</span>
+              </label>
+            </div>
           </fieldset>
 
-          <button type="submit" class="button program-form__sumbit-button">Отправить заявку</button>
-
-          <span class="program-form__footnote">* — Обязательные поля</span>
+          <div class="program-form__submit-container">
+            <button type="submit" class="button program-form__sumbit-button">Отправить заявку</button>
+            <span class="program-form__footnote">* — Обязательные поля</span>
+          </div>
         </div>
       </form>
     </main>
@@ -127,31 +140,33 @@
         <img src="https://via.placeholder.com/320x362" alt="Расположение на карте" class="map">
       </section>
 
-      <img src="https://via.placeholder.com/128x24" alt="Cat Energy" class="logo-text">
-      <section class="social">
-        <h2 class="visually-hidden">Мы в социальных сетях</h2>
-        <ul class="social__list">
-          <li class="social__item">
-            <a href="https://vk.com/" class="social__icon">
-              <span class="visually-hidden">Вконтакте</span>
-            </a>
-          </li>
-          <li class="social__item">
-            <a href="https://www.instagram.com/" class="social__icon">
-              <span class="visually-hidden">Инстаграм</span>
-            </a>
-          </li>
-          <li class="social__item">
-            <a href="https://www.facebook.com/" class="social__icon">
-              <span class="visually-hidden">Фейсбук</span>
-            </a>
-          </li>
-        </ul>
-      </section>
-      <a href="https://htmlacademy.ru/" class="credits">
-        <span class="credits__author">HTML Academy</span>
-        <img src="https://via.placeholder.com/27x34" alt="Логотип HTML Academy" class="credits__logo">
-      </a>
+      <div class="page-footer__bottom-container">
+        <img src="https://via.placeholder.com/128x24" alt="Cat Energy" class="logo-text">
+        <section class="social">
+          <h2 class="visually-hidden">Мы в социальных сетях</h2>
+          <ul class="social__list">
+            <li class="social__item">
+              <a href="https://vk.com/" class="social__icon">
+                <span class="visually-hidden">Вконтакте</span>
+              </a>
+            </li>
+            <li class="social__item">
+              <a href="https://www.instagram.com/" class="social__icon">
+                <span class="visually-hidden">Инстаграм</span>
+              </a>
+            </li>
+            <li class="social__item">
+              <a href="https://www.facebook.com/" class="social__icon">
+                <span class="visually-hidden">Фейсбук</span>
+              </a>
+            </li>
+          </ul>
+        </section>
+        <a href="https://htmlacademy.ru/" class="credits">
+          <span class="credits__author">HTML Academy</span>
+          <img src="https://via.placeholder.com/27x34" alt="Логотип HTML Academy" class="credits__logo">
+        </a>
+      </div>
     </footer>
   </body>
 </html>

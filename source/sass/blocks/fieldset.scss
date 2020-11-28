@@ -1,21 +1,66 @@
+@import "../global/viewports.scss";
 @import "../global/colors.scss";
 
 .fieldset {
-  padding: 20px;
+  margin: 0;
+  padding: 30px 20px;
   padding-top: 0;
   border: none;
   border-bottom: thin solid $border-color;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 28px;
+    padding-bottom: 0;
+
+    &:not(.fieldset--highlighted) {
+      border: none;
+    }
+  }
 
   &--highlighted {
     padding: 0;
     padding-top: 20px;
     border: none;
     border-top: 2px solid $primary-base;
+
+    @media (min-width: $tablet-width) {
+      padding-left: 28px;
+
+      .fieldset__inputs-container {
+        padding-top: 40px;
+      }
+    }
+  }
+}
+
+.fieldset__inputs-container {
+  padding-top: 10px;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 42px;
+    padding-right: 70px;
+  }
+}
+
+.fieldset__bordered-box {
+  @media (min-width: $tablet-width) {
+    padding: 25px;
+    border: thin solid $field-border-color;
+  }
+}
+
+.fieldset__checkbox-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  row-gap: 20px;
+
+  @media (min-width: $tablet-width) {
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 32px;
   }
 }
 
 .fieldset__input,
-.fieldset__checkbox,
 .fieldset__radio {
   margin-bottom: 14px;
 

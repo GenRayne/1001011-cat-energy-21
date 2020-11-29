@@ -1,8 +1,13 @@
+@import "../global/viewports.scss";
 @import "../global/colors.scss";
 
 .products-extra__main-heading {
   padding-left: 20px;
   line-height: 24px;
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+  }
 }
 
 .products-extra__list {

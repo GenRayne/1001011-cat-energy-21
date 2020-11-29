@@ -24,12 +24,16 @@
   padding: 30px 20px;
   background-color: $white;
 
-  &--color-dim {
-    background-color: $grey-light;
-  }
-
   @media (min-width: $tablet-width) {
     padding: 60px 70px;
+  }
+
+  &--color-dim {
+    background-color: $grey-light;
+
+    @media (min-width: $desktop-width) {
+      background-color: $white;
+    }
   }
 }
 

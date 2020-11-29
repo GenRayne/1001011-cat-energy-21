@@ -1,3 +1,4 @@
+@import "../global/viewports.scss";
 @import "../global/colors.scss";
 
 .input {
@@ -15,6 +16,11 @@
   font-weight: 400;
   text-transform: uppercase;
   color: $black-base;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 1;
+  }
 }
 
 .input__field {
@@ -29,6 +35,11 @@
   color: $black-base;
 
   border: thin solid $field-border-color;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 1;
+  }
 
   &--with-icon {
     border: thin solid $grey-dark;

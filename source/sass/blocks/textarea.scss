@@ -1,3 +1,6 @@
+@import "../global/viewports.scss";
+@import "../global/colors.scss";
+
 .textarea {
   padding: 13px 15px;
   width: 100%;
@@ -10,4 +13,9 @@
   color: $black-base;
 
   border: thin solid $field-border-color;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 1;
+  }
 }

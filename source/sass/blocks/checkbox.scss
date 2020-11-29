@@ -1,3 +1,6 @@
+@import "../global/viewports.scss";
+@import "../global/colors.scss";
+
 .checkbox {
   display: block;
 }
@@ -9,4 +12,9 @@
   font-weight: 400;
   text-transform: uppercase;
   color: $black;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 1;
+  }
 }

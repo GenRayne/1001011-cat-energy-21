@@ -1,13 +1,37 @@
+@import "../global/viewports.scss";
 @import "../global/colors.scss";
 
-.product__heading {
-  margin: 0;
-  margin-bottom: 18px;
-  font-family: "Oswald", "Helvetica", sans-serif;
-  font-size: 16px;
-  line-height: 20px;
-  font-weight: 400;
-  text-transform: uppercase;
+.product {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-areas:
+    "image  info"
+    "button button";
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px;
+    background-color: $grey-light;
+  }
+
+  &--additional {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    @media (min-width: $tablet-width) {
+      padding-top: 52px;
+      height: 100%;
+      background-color: transparent;
+      border: 2px solid $grey-light;
+    }
+
+    .product__button {
+      align-self: stretch;
+    }
+  }
 }
 
 .product__link {
@@ -15,12 +39,100 @@
   color: $black-base;
 }
 
+.product__image-container {
+  grid-area: image;
+  align-self: center;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 34px;
+  }
+}
+
+.product__image {
+  display: block;
+  margin: auto;
+
+  @media (min-width: $tablet-width) {
+    height: 200px;
+  }
+}
+
 .product__info {
-  margin-bottom: 24px;
+  grid-area: info;
+
+  @media (min-width: $tablet-width) {
+    align-self: stretch;
+  }
+}
+
+.product__heading {
+  margin: 0;
+  margin-bottom: 18px;
+  max-width: 95px;
+  font-family: "Oswald", "Helvetica", sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 400;
+  text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    margin: 0 auto 20px;
+    max-width: 155px;
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+  }
+}
+
+.product__characteristics {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.product__table-row {
+  @media (min-width: $tablet-width) {
+    border-bottom: thin solid $grey-dark;
+  }
+}
+
+.product__table-cell {
+  @media (min-width: $tablet-width) {
+    padding: 8px 0;
+  }
+
+  &:not(.product__table-cell--header) {
+    @media (min-width: $tablet-width) {
+      text-align: right;
+    }
+  }
 }
 
 .product__button {
+  grid-area: button;
   display: block;
+  margin-top: 24px;
+
+  @media (min-width: $tablet-width) {
+    align-self: stretch;
+    padding-top: 10px;
+    padding-bottom: 8px;
+    max-width: 100%;
+    font-size: 16px;
+    line-height: 21px;
+  }
+}
+
+.product__more-icon {
+  margin-bottom: 24px;
+  width: 30px;
+  height: 30px;
+  background-color: $icon-color;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 50px;
+    width: 60px;
+    height: 60px;
+  }
 }
 
 .product__more-heading {
@@ -31,11 +143,28 @@
   line-height: 20px;
   font-weight: 400;
   text-transform: uppercase;
+  text-align: center;
   color: $black-darkest;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 24px;
+    max-width: 170px;
+    font-size: 20px;
+    line-height: 22px;
+  }
 }
 
 .product__more-description {
+  margin: 0;
   font-size: 12px;
   line-height: 16px;
   font-weight: 400;
+  text-align: center;
+
+  @media (min-width: $tablet-width) {
+    max-width: 220px;
+    font-size: 16px;
+    line-height: 18px;
+    margin-bottom: auto;
+  }
 }

@@ -1,8 +1,24 @@
+@import "../global/viewports.scss";
 @import "../global/colors.scss";
 
 .products {
   list-style: none;
   padding: 0;
+
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 60px;
+    row-gap: 30px;
+    padding: 0 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 80px;
+    row-gap: 40px;
+    padding: 0 70px;
+  }
 }
 
 .products__item {
@@ -11,5 +27,14 @@
 
   &:first-child {
     border-top: thin solid $border-color;
+
+    @media (min-width: $tablet-width) {
+      border: none;
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+    border: none;
   }
 }

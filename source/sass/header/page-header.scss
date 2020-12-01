@@ -26,14 +26,20 @@
   @media (min-width: $tablet-width) {
     margin-right: 20px;
     padding: 0;
-
-    .logo {
-      margin-right: 12px;
-    }
   }
 
   @media (min-width: $desktop-width) {
     margin-right: 34px;
     padding: 0;
   }
+}
+
+.page-header__logo {
+  @media (min-width: $tablet-width) {
+    margin-right: 12px;
+  }
+}
+
+.page-header__logo-text {
+  margin-left: -12px;
 }

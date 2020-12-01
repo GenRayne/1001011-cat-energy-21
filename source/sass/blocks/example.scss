@@ -2,7 +2,7 @@
 @import "../global/colors.scss";
 
 .example {
-  padding: 30px 20px;
+  padding: 27px 20px;
   background-color: $grey-base-2;
 
   @media (min-width: $tablet-width) {
@@ -22,7 +22,7 @@
 
 .example__heading {
   grid-area: heading;
-  margin-bottom: 30px;
+  margin-bottom: 32px;
 }
 
 .example__text {

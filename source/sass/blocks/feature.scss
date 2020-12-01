@@ -28,4 +28,12 @@
 
 .feature__description {
   margin: 0;
+
+  br {
+    display: none;
+
+    @media (min-width: $tablet-width) {
+      display: inline;
+    }
+  }
 }

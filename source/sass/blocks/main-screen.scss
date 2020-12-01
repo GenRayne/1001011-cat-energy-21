@@ -12,14 +12,14 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  padding: 24px 20px 22px;
-  min-height: 497px;
+  padding: 26px 20px 22px;
+  min-height: 500px;
 
   background-image:
     url("../img/d4c0fe600dd690a42aaf623045ebe148.png"),
-    linear-gradient(to bottom, $primary-opaque, $primary-opaque $cat-height-mobile + $cat-y-position-mobile, transparent $cat-height-mobile + $cat-y-position-mobile, transparent),
+    linear-gradient(to bottom, $primary-opaque, $primary-opaque $cat-height-mobile + $cat-y-position-mobile + 20px, transparent $cat-height-mobile + $cat-y-position-mobile + 20px, transparent),
     url("../img/4570a4a08306b2efdaf0011db30cbec6-sm.jpg"),
-    linear-gradient(to bottom, $cat-bg-color-top, $cat-bg-color-bottom $cat-height-mobile + $cat-y-position-mobile, transparent $cat-height-mobile + $cat-y-position-mobile, transparent);
+    linear-gradient(to bottom, $cat-bg-color-top, $cat-bg-color-bottom $cat-height-mobile + $cat-y-position-mobile + 20px, transparent $cat-height-mobile + $cat-y-position-mobile + 20px, transparent);
   background-repeat:
     no-repeat,
     no-repeat,
@@ -27,9 +27,9 @@
     no-repeat;
   background-size:
     280px,
-    auto $cat-height-mobile,
-    auto $cat-height-mobile,
-    auto $cat-height-mobile;
+    auto calc(#{$cat-height-mobile} + 20px),
+    auto calc(#{$cat-height-mobile} + 20px),
+    auto calc(#{$cat-height-mobile} + 20px);
   background-position:
     center 165px,
     0 0,

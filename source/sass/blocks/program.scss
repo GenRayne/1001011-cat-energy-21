@@ -3,7 +3,7 @@
 
 .program {
   position: relative;
-  padding: 30px 22px 6px;
+  padding: 30px 21px 6px;
   background-color: $grey-light;
 
   @media (min-width: $tablet-width) {
@@ -63,7 +63,9 @@
 }
 
 .program__button {
-  padding: 15px 0;
+  margin-top: 22px;
+  margin-left: -1px;
+  padding: 19px 0 14px;
   width: 100%;
   font-size: 16px;
   text-align: left;

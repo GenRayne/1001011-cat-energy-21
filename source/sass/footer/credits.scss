@@ -1,3 +1,4 @@
+@import "../global/viewports.scss";
 @import "../global/colors.scss";
 
 .credits {
@@ -13,10 +14,16 @@
 }
 
 .credits__author {
+  margin-top: -4px;
   font-size: 16px;
   line-height: 1;
   font-weight: 400;
   color: $black-base;
 
   margin-right: 22px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: -2px;
+    margin-right: 23px;
+  }
 }

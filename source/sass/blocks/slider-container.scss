@@ -11,7 +11,8 @@
   background-position: center center;
 
   @media (min-width: $tablet-width) {
-    height: 620px;
+    height: 654px;
+    background-position: center center;
   }
 
   @media (min-width: $desktop-width) {
@@ -22,14 +23,14 @@
 
 .slider-container__slider {
   position: absolute;
-  bottom: 8px;
+  bottom: 2px;
   left: 16%;
   width: 70%;
 
   @media (min-width: $tablet-width) {
-    bottom: 67px;
-    left: 0;
-    width: 100%;
+    bottom: 68px;
+    left: 9.5%;
+    width: 80.5%;
   }
 
   @media (min-width: $desktop-width) {

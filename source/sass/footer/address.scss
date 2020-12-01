@@ -25,7 +25,7 @@
   background-color: $white;
 
   @media (min-width: $tablet-width) {
-    padding: 60px 70px;
+    padding: 67px 71px 57px;
   }
 
   &--color-dim {
@@ -48,7 +48,7 @@
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
-    line-height: 23px;
+    line-height: 24px;
   }
 }
 
@@ -64,6 +64,7 @@
 .address__street {
   @media (min-width: $tablet-width) {
     display: block;
-    margin-bottom: 14px;
+    margin-top: -3px;
+    margin-bottom: 20px;
   }
 }

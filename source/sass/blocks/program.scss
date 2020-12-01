@@ -7,7 +7,11 @@
   background-color: $grey-light;
 
   @media (min-width: $tablet-width) {
-    padding: 80px 280px 50px 52px;
+    padding: 78px 280px 48px 53px;
+
+    &--with-wide-picture {
+      padding: 78px 312px 48px 53px;
+    }
   }
 
   @media (min-width: $desktop-width) {
@@ -25,7 +29,7 @@
   border-radius: 50%;
 
   @media (min-width: $tablet-width) {
-    top: calc(50% - 100px);
+    top: calc(50% - 95px);
     right: 62px;
     width: 200px;
     height: 200px;
@@ -51,6 +55,7 @@
   color: $black;
 
   @media (min-width: $tablet-width) {
+    margin-bottom: 24px;
     padding-left: 0;
     font-size: 36px;
     line-height: 36px;
@@ -65,7 +70,7 @@
 .program__button {
   margin-top: 22px;
   margin-left: -1px;
-  padding: 19px 0 14px;
+  padding: 18px 0 14px;
   width: 100%;
   font-size: 16px;
   text-align: left;
@@ -74,7 +79,7 @@
   border-top: thin solid #d9d9d9;
 
   @media (min-width: $tablet-width) {
-    margin-top: 48px;
+    margin-top: 22px;
     font-size: 20px;
     border: none;
   }

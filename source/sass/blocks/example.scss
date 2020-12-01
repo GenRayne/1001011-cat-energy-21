@@ -6,7 +6,10 @@
   background-color: $grey-base-2;
 
   @media (min-width: $tablet-width) {
-    padding: 40px 30px 0;
+    padding: 43px 30px 0;
+    border-top: thin solid $border-color;
+    background-color: transparent;
+    background-image: linear-gradient(to top, $grey-base-2 462px, transparent 462px, transparent);
   }
 
   @media (min-width: $desktop-width) {
@@ -23,12 +26,20 @@
 .example__heading {
   grid-area: heading;
   margin-bottom: 32px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 65px;
+  }
 }
 
 .example__text {
   grid-area: description;
   margin-bottom: 25px;
-  padding-right: 3px;
+  padding-right: 10px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 38px;
+  }
 }
 
 .example__results {

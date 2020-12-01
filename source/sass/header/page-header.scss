@@ -8,7 +8,7 @@
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    padding: 24px 30px 0;
+    padding: 20px 30px 0;
     width: 100%;
   }
 
@@ -42,4 +42,8 @@
 
 .page-header__logo-text {
   margin-left: -12px;
+
+  @media (min-width: $tablet-width) {
+    margin-left: 0;
+  }
 }

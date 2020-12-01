@@ -4,7 +4,7 @@
 .results {
   @media (min-width: $tablet-width) {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 366px 1fr;
   }
 
   @media (min-width: $desktop-width) {
@@ -20,7 +20,7 @@
   column-gap: 30px;
   margin-bottom: 34px;
 
-  @media (min-width: $desktop-width) {
+  @media (min-width: $tablet-width) {
     column-gap: 42px;
   }
 }
@@ -46,8 +46,8 @@
   text-align: center;
   color: $black;
 
-  @media (min-width: $desktop-width) {
-    margin-top: 4px;
+  @media (min-width: $tablet-width) {
+    margin-top: 2px;
     font-size: 30px;
     line-height: 37px;
   }
@@ -84,6 +84,7 @@
     width: fit-content;
     font-size: 14px;
     line-height: 14px;
+    background-color: $white;
   }
 
   @media (min-width: $tablet-width) {

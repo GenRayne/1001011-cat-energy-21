@@ -1,3 +1,4 @@
+@import "../global/viewports.scss";
 @import "../global/colors.scss";
 
 .social {
@@ -25,6 +26,10 @@
   list-style: none;
   margin-right: 33px;
 
+  @media (min-width: $tablet-width) {
+    margin-right: 22px;
+  }
+
   &:last-child {
     margin-right: 0;
   }
@@ -36,4 +41,10 @@
   height: 22px;
   background-color: $grey-dark;
   border-radius: 5px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: -2px;
+    width: 30px;
+    height: 30px;
+  }
 }

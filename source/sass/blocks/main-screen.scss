@@ -37,7 +37,7 @@
     0 0;
 
   @media (min-width: $tablet-width) {
-    padding: 60px 112px;
+    padding: 50px 112px 70px;
     min-height: 860px;
     justify-content: flex-start;
 
@@ -82,7 +82,8 @@
   text-align: center;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 40px;
+    padding-left: 5px;
+    margin-bottom: 42px;
     color: $black;
     line-height: 60px;
     text-align: left;
@@ -103,7 +104,8 @@
   color: $white;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 40px;
+    padding-left: 5px;
+    margin-bottom: 47px;
     font-size: 20px;
     line-height: 20px;
     color: $black;

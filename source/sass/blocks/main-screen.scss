@@ -48,7 +48,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding: 220px 110px;
+    padding: 224px 185px 220px;
     margin-bottom: 82px;
     min-height: $cat-height-desktop;
     max-height: $cat-height-desktop;
@@ -91,6 +91,7 @@
 
   @media (min-width: $desktop-width) {
     max-width: 420px;
+    margin-bottom: 40px;
   }
 }
 
@@ -114,5 +115,12 @@
 
   @media (min-width: $desktop-width) {
     margin-bottom: 52px;
+  }
+}
+
+.main-screen__button {
+  @media (min-width: $desktop-width) {
+    margin-left: 5px;
+    padding: 17px 26px;
   }
 }

@@ -15,11 +15,14 @@
   @media (min-width: $desktop-width) {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 210px 235px 1fr;
     grid-template-areas:
       "heading     slider"
       "description slider"
       "results     slider";
-    padding: 30px 110px;
+    padding: 0 110px;
+    border-top: none;
+    background-image: linear-gradient(to top, $grey-base-2 462px, transparent 462px, transparent);
   }
 }
 
@@ -29,6 +32,11 @@
 
   @media (min-width: $tablet-width) {
     margin-bottom: 65px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 75px;
+    margin-bottom: 0;
   }
 }
 
@@ -40,11 +48,24 @@
   @media (min-width: $tablet-width) {
     margin-bottom: 38px;
   }
+
+  @media (min-width: $desktop-width) {
+    margin: 0;
+    align-self: center;
+    padding-top: 2px;
+    padding-right: 0;
+    max-width: 438px;
+    max-height: 165px;
+  }
 }
 
 .example__results {
   grid-area: results;
   margin-bottom: 30px;
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 0;
+  }
 }
 
 .example__slider {

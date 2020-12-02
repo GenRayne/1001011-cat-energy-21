@@ -20,6 +20,13 @@
       margin-bottom: 0;
     }
   }
+
+  @media (min-width: $desktop-width) {
+    .logo-text,
+    .credits {
+      margin-top: 4px;
+    }
+  }
 }
 
 .page-footer__bottom-container {

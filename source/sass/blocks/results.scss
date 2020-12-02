@@ -23,6 +23,10 @@
   @media (min-width: $tablet-width) {
     column-gap: 42px;
   }
+
+  @media (min-width: $desktop-width) {
+    margin: 0;
+  }
 }
 
 .results__item {
@@ -33,7 +37,7 @@
 
   @media (min-width: $desktop-width) {
     width: 162px;
-    height: 77px;
+    height: 72px;
   }
 }
 
@@ -81,13 +85,22 @@
   background-color: $grey-base;
 
   @media (min-width: $tablet-width) {
+    padding: 0 10px;
     width: fit-content;
     font-size: 14px;
     line-height: 14px;
     background-color: $white;
   }
 
-  @media (min-width: $tablet-width) {
+  @media (min-width: $desktop-width) {
     padding: 0 10px;
+    background-color: $grey-base;
+  }
+}
+
+.results__expenses {
+  @media (min-width: $desktop-width) {
+    margin: 0;
+    margin-top: -16px;
   }
 }

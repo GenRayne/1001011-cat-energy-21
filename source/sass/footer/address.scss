@@ -28,6 +28,12 @@
     padding: 67px 71px 57px;
   }
 
+  @media (min-width: $desktop-width) {
+    padding: 65px 71px 57px 75px;
+    grid-column-gap: 80px;
+    margin-top: -7px;
+  }
+
   &--color-dim {
     background-color: $grey-light;
 
@@ -59,6 +65,11 @@
   @media (min-width: $tablet-width) {
     text-align: right;
   }
+
+  @media (min-width: $desktop-width) {
+    line-height: 24px;
+    text-align: left;
+  }
 }
 
 .address__street {
@@ -66,5 +77,11 @@
     display: block;
     margin-top: -3px;
     margin-bottom: 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: block;
+    line-height: 20px;
+    margin-bottom: 18px;
   }
 }

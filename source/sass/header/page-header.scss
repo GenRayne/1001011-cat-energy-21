@@ -38,6 +38,12 @@
   @media (min-width: $tablet-width) {
     margin-right: 12px;
   }
+
+  @media (min-width: $desktop-width) {
+    width: 70px;
+    height: 70px;
+    margin-right: 14px;
+  }
 }
 
 .page-header__logo-text {
@@ -45,5 +51,11 @@
 
   @media (min-width: $tablet-width) {
     margin-left: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 5px;
+    width: 118px;
+    height: 22px;
   }
 }

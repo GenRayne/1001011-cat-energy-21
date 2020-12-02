@@ -4,7 +4,7 @@
 .results {
   @media (min-width: $tablet-width) {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 366px 1fr;
   }
 
   @media (min-width: $desktop-width) {
@@ -18,22 +18,26 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   column-gap: 30px;
-  margin-bottom: 30px;
+  margin-bottom: 34px;
+
+  @media (min-width: $tablet-width) {
+    column-gap: 42px;
+  }
 
   @media (min-width: $desktop-width) {
-    column-gap: 42px;
+    margin: 0;
   }
 }
 
 .results__item {
   position: relative;
-  padding: 14px;
+  padding: 14px 14px 16px;
   border: thin solid $grey-dark;
   border-radius: 3px;
 
   @media (min-width: $desktop-width) {
     width: 162px;
-    height: 77px;
+    height: 72px;
   }
 }
 
@@ -46,8 +50,8 @@
   text-align: center;
   color: $black;
 
-  @media (min-width: $desktop-width) {
-    margin-top: 4px;
+  @media (min-width: $tablet-width) {
+    margin-top: 2px;
     font-size: 30px;
     line-height: 37px;
   }
@@ -81,12 +85,22 @@
   background-color: $grey-base;
 
   @media (min-width: $tablet-width) {
+    padding: 0 10px;
     width: fit-content;
     font-size: 14px;
     line-height: 14px;
+    background-color: $white;
   }
 
-  @media (min-width: $tablet-width) {
+  @media (min-width: $desktop-width) {
     padding: 0 10px;
+    background-color: $grey-base;
+  }
+}
+
+.results__expenses {
+  @media (min-width: $desktop-width) {
+    margin: 0;
+    margin-top: -16px;
   }
 }

@@ -6,6 +6,8 @@
 
   .logo-text {
     margin-bottom: 32px;
+    width: 128px;
+    height: 24px;
   }
 
   .social {
@@ -16,6 +18,13 @@
     .logo-text,
     .social {
       margin-bottom: 0;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    .logo-text,
+    .credits {
+      margin-top: 4px;
     }
   }
 }

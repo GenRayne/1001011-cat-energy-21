@@ -10,15 +10,21 @@
   text-align: center;
   color: $black;
 
-  @media (min-width: $desktop-width) {
+  @media (min-width: $tablet-width) {
+    margin-top: 26px;
     font-size: 20px;
     line-height: 20px;
   }
 }
 
 .expenses__text {
+  @media (min-width: $tablet-width) {
+    margin-bottom: 9px;
+  }
+
   @media (min-width: $desktop-width) {
-    margin-right: 63px;
+    margin-bottom: 0;
+    margin-right: 59px;
   }
 }
 

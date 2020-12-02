@@ -3,37 +3,38 @@
 .slider-container {
   position: relative;
   margin: auto;
-  width: 80%;
-  height: 240px;
+  width: 100%;
+  height: 305px;
   background-image: url("../img/image_cat_desktop-sm.png");
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: cover;
   background-position: center center;
 
   @media (min-width: $tablet-width) {
-    height: 620px;
+    height: 654px;
+    background-position: center center;
   }
 
   @media (min-width: $desktop-width) {
     width: 100%;
-    height: 656px;
+    height: 672px;
   }
 }
 
 .slider-container__slider {
   position: absolute;
-  bottom: 0;
-  left: 8%;
-  width: 84%;
+  bottom: 2px;
+  left: 16%;
+  width: 70%;
 
   @media (min-width: $tablet-width) {
-    bottom: 67px;
-    left: 0;
-    width: 100%;
+    bottom: 68px;
+    left: 9.5%;
+    width: 80.5%;
   }
 
   @media (min-width: $desktop-width) {
-    width: 80%;
-    left: 10%;
+    width: 93.5%;
+    left: 6.5%;
   }
 }

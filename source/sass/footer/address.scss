@@ -21,11 +21,17 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-area: address;
-  padding: 30px 20px;
+  padding: 28px 20px 27px;
   background-color: $white;
 
   @media (min-width: $tablet-width) {
-    padding: 60px 70px;
+    padding: 67px 71px 57px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 65px 71px 57px 75px;
+    grid-column-gap: 80px;
+    margin-top: -7px;
   }
 
   &--color-dim {
@@ -48,7 +54,7 @@
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
-    line-height: 23px;
+    line-height: 24px;
   }
 }
 
@@ -59,11 +65,23 @@
   @media (min-width: $tablet-width) {
     text-align: right;
   }
+
+  @media (min-width: $desktop-width) {
+    line-height: 24px;
+    text-align: left;
+  }
 }
 
 .address__street {
   @media (min-width: $tablet-width) {
     display: block;
-    margin-bottom: 14px;
+    margin-top: -3px;
+    margin-bottom: 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: block;
+    line-height: 20px;
+    margin-bottom: 18px;
   }
 }

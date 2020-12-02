@@ -1,15 +1,14 @@
 @import "../global/viewports.scss";
 
 .how-it-works {
-  padding: 30px 20px;
-  padding-bottom: 42px;
+  padding: 29px 20px 41px;
 
   @media (min-width: $tablet-width) {
-    padding: 45px 30px;
+    padding: 45px 30px 32px;
   }
 
   @media (min-width: $desktop-width) {
-    padding: 45px 110px;
+    padding: 72px 110px 0;
   }
 }
 
@@ -21,6 +20,7 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     column-gap: 60px;
+    row-gap: 61px;
   }
 
   @media (min-width: $desktop-width) {
@@ -43,9 +43,9 @@
 }
 
 .how-it-works__heading {
-  margin-bottom: 38px;
+  margin-bottom: 39px;
 
-  @media (min-width: $desktop-width) {
+  @media (min-width: $tablet-width) {
     margin-bottom: 72px;
   }
 }

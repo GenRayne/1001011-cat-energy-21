@@ -1,8 +1,9 @@
 @import "../global/viewports.scss";
 @import "../global/colors.scss";
+@import "../global/fonts.scss";
 
 .text {
-  font-family: "Arial", "Helvetica", sans-serif;
+  font-family: $font-common;
   font-size: 14px;
   line-height: 18px;
   font-weight: 400;

@@ -1,5 +1,6 @@
 @import "../global/viewports.scss";
 @import "../global/colors.scss";
+@import "../global/fonts.scss";
 
 .slider {
   display: flex;
@@ -9,7 +10,7 @@
 
 .slider__text {
   padding: 6px 0;
-  font-family: "Oswald", "Helvetica", sans-serif;
+  font-family: $font-headings;
   font-size: 16px;
   line-height: 20px;
   font-weight: 400;

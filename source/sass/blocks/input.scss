@@ -1,5 +1,6 @@
 @import "../global/viewports.scss";
 @import "../global/colors.scss";
+@import "../global/fonts.scss";
 
 .input {
   display: flex;
@@ -10,7 +11,7 @@
   display: inline-block;
   margin-right: 14px;
 
-  font-family: "Oswald", "Helvetica", sans-serif;
+  font-family: $font-headings;
   font-size: 16px;
   line-height: 18px;
   font-weight: 400;
@@ -27,7 +28,7 @@
   padding: 13px 15px;
   flex-grow: 1;
 
-  font-family: "Oswald", "Helvetica", sans-serif;
+  font-family: $font-headings;
   font-size: 16px;
   line-height: 18px;
   font-weight: 400;

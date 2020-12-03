@@ -1,11 +1,12 @@
 @import "../global/viewports.scss";
 @import "../global/colors.scss";
+@import "../global/fonts.scss";
 
 .textarea {
   padding: 13px 15px;
   width: 100%;
 
-  font-family: "Oswald", "Helvetica", sans-serif;
+  font-family: $font-headings;
   font-size: 16px;
   line-height: 18px;
   font-weight: 400;

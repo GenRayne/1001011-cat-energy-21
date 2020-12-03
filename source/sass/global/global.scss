@@ -1,6 +1,8 @@
+@import "../global/fonts.scss";
+
 html {
   box-sizing: border-box;
-  font-family: "Arial", "Helvetica", sans-serif;
+  font-family: $font-common;
   font-size: 14px;
   font-weight: 400;
 }

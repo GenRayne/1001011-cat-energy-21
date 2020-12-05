@@ -9,7 +9,7 @@
 
 .input__label {
   display: inline-block;
-  margin-right: 14px;
+  margin-right: 13px;
 
   font-family: $font-headings;
   font-size: 16px;
@@ -25,12 +25,14 @@
 }
 
 .input__field {
+  position: relative;
+  top: 2px;
   padding: 13px 15px;
   flex-grow: 1;
 
   font-family: $font-headings;
   font-size: 16px;
-  line-height: 18px;
+  line-height: 17px;
   font-weight: 400;
   text-transform: uppercase;
   color: $black-base;

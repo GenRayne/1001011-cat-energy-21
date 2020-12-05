@@ -3,8 +3,7 @@
 
 .fieldset {
   margin: 0;
-  padding: 30px 20px;
-  padding-top: 0;
+  padding: 0 20px 23px;
   border: none;
   border-bottom: thin solid $border-color;
 
@@ -70,7 +69,7 @@
 .fieldset__checkbox-container {
   display: grid;
   grid-template-columns: 1fr;
-  row-gap: 20px;
+  row-gap: 23px;
 
   @media (min-width: $tablet-width) {
     grid-template-columns: repeat(2, 1fr);
@@ -82,9 +81,16 @@
   }
 }
 
-.fieldset__input,
-.fieldset__radio {
+.fieldset__input {
   margin-bottom: 14px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.fieldset__radio {
+  margin-bottom: 23px;
 
   &:last-child {
     margin-bottom: 0;

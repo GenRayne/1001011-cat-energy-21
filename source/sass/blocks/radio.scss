@@ -9,6 +9,10 @@
 .radio__field {
   opacity: 0;
   margin-right: 29px;
+
+  @media (min-width: $tablet-width) {
+    margin-right: 43px;
+  }
 }
 
 .radio__label {
@@ -29,6 +33,13 @@
     height: 30px;
     border: thin solid $grey-dark;
     border-radius: 50%;
+
+    @media (min-width: $tablet-width) {
+      top: -5px;
+      left: -60px;
+      width: 40px;
+      height: 40px;
+    }
   }
 
   @media (min-width: $tablet-width) {
@@ -46,4 +57,11 @@
   height: 14px;
   border-radius: 50%;
   background-color: $primary-base;
+
+  @media (min-width: $tablet-width) {
+    top: 6px;
+    left: -49px;
+    width: 18px;
+    height: 18px;
+  }
 }

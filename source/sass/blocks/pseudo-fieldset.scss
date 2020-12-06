@@ -10,6 +10,7 @@
   display: flex;
   margin-bottom: 25px;
   padding: 0;
+  width: 100%;
 
   &::after {
     content: "";
@@ -23,8 +24,13 @@
     background-color: $primary-base;
 
     @media (min-width: $tablet-width) {
-      top: 20px;
+      top: 23px;
       margin-left: 40px;
+    }
+
+    @media (min-width: $desktop-width) {
+      top: 21px;
+      margin-left: 42px;
     }
   }
 
@@ -32,7 +38,7 @@
     @media (min-width: $tablet-width) {
       content: "";
       position: relative;
-      top: 20px;
+      top: 23px;
       left: 0;
       margin-right: 40px;
       display: block;
@@ -43,6 +49,10 @@
 
     @media (min-width: $desktop-width) {
       width: 90px;
+    }
+
+    @media (min-width: $desktop-width) {
+      top: 21px;
     }
   }
 }
@@ -57,10 +67,10 @@
   padding-right: 20px;
 
   @media (min-width: $tablet-width) {
-    padding: 40px 70px 0;
+    padding: 47px 67px 0 70px;
   }
 
   @media (min-width: $desktop-width) {
-    padding: 40px 110px 0;
+    padding: 45px 110px 2px;
   }
 }

@@ -22,7 +22,7 @@
 }
 
 .products__item {
-  padding: 24px 20px;
+  padding: 21px 20px 23px;
   border-bottom: thin solid $border-color;
 
   &:first-child {
@@ -31,6 +31,10 @@
     @media (min-width: $tablet-width) {
       border: none;
     }
+  }
+
+  &:last-child {
+    padding: 25px 20px 23px;
   }
 
   @media (min-width: $tablet-width) {

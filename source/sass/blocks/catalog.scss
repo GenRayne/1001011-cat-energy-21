@@ -1,7 +1,14 @@
 @import "../global/viewports.scss";
 
+.catalog {
+  .products {
+    margin: 0;
+    margin-bottom: 28px;
+  }
+}
+
 .catalog__heading {
-  margin: 30px 0 40px;
+  margin: 24px 0 38px;
   padding: 0 20px;
 
   @media (min-width: $tablet-width) {

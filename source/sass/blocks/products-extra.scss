@@ -29,7 +29,10 @@
 .products-extra__list {
   grid-area: extra-list;
   list-style: none;
+  margin: 0;
+  margin-top: 32px;
   padding: 0 20px;
+  // padding: 0 20px 0 21px;
 
   @media (min-width: $tablet-width) {
     margin: 0 30px;
@@ -52,7 +55,7 @@
     "heading heading"
     "quantity price"
     "button button";
-  padding: 14px 0 18px;
+  padding: 13px 0 18px;
   border-bottom: thin solid $grey-dark;
 
   &:first-child {
@@ -84,7 +87,8 @@
 .products-extra__heading {
   grid-area: heading;
   margin: 0;
-  margin-bottom: 13px;
+  margin-bottom: 12px;
+  padding-left: 1px;
   font-family: $font-headings;
   font-size: 16px;
   line-height: 16px;
@@ -109,13 +113,13 @@
 .products-extra__button {
   grid-area: button;
   display: block;
-  margin-top: 15px;
+  margin-top: 14px;
+  font-size: 16px;
 
   @media (min-width: $tablet-width) {
     padding-top: 10px;
     padding-bottom: 8px;
     max-width: 100%;
-    font-size: 16px;
     line-height: 21px;
   }
 

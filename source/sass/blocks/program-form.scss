@@ -1,42 +1,83 @@
 @import "../global/viewports.scss";
 @import "../global/colors.scss";
+@import "../global/fonts.scss";
 
 .program-form {
-  .fieldset,
-  .pseudo-fieldset {
-    margin-bottom: 30px;
+  .fieldset {
+    margin-bottom: 20px;
 
     @media (min-width: $tablet-width) {
-      margin-bottom: 60px;
+      margin-bottom: 74px;
     }
+
+    @media (min-width: $desktop-width) {
+      margin-bottom: 0;
+    }
+
+    &--highlighted {
+      margin-top: 29px;
+
+      @media (min-width: $tablet-width) {
+        margin-top: 80px;
+        margin-bottom: 71px;
+      }
+
+      @media (min-width: $desktop-width) {
+        margin-top: 75px;
+      }
+    }
+  }
+
+  .pseudo-fieldset {
+    margin-top: 29px;
+    margin-bottom: 20px;
+
+    @media (min-width: $tablet-width) {
+      margin-bottom: 67px;
+    }
+
+    @media (min-width: $desktop-width) {
+      margin-top: 75px;
+      margin-bottom: 67px;
+    }
+  }
+
+  .program-form__additional {
+    margin-top: 23px;
+    margin-bottom: 23px;
+    padding-top: 27px;
   }
 }
 
 .program-form__head-container {
-  padding: 30px 20px 40px;
+  padding: 26px 20px 28px;
 
   @media (min-width: $tablet-width) {
-    padding: 70px 70px 60px;
+    padding: 63px 70px 63px;
   }
 
   @media (min-width: $desktop-width) {
-    padding-left: 110px;
-    padding-right: 110px;
+    padding: 76px 110px;
+    padding-bottom: 0;
   }
 }
 
 .program-form__heading {
-  margin-bottom: 40px;
+  margin-bottom: 38px;
   line-height: 36px;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 60px;
+    margin-bottom: 67px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 69px;
   }
 }
 
 .program-form__description {
   margin: 0;
-  font-family: "Oswald", "Helvetica", sans-serif;
+  font-family: $font-headings;
   font-size: 14px;
   line-height: 18px;
   font-weight: 400;
@@ -47,11 +88,16 @@
     font-size: 20px;
     line-height: 30px;
   }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 63px;
+  }
 }
 
 .program-form__pet-info-container {
   @media (min-width: $tablet-width) {
     padding: 0 70px;
+    padding-right: 67px;
 
     .fieldset,
     .fieldset__inputs-container {
@@ -73,12 +119,17 @@
 
     .program-form__chosen-program {
       border: thin solid $field-border-color;
+
+      @media (min-width: $desktop-width) {
+        position: relative;
+        top: 2px;
+      }
     }
   }
 }
 
 .program-form__bottom-container {
-  padding-left: 20px;
+  padding-left: 19px;
   padding-top: 0;
   padding-bottom: 32px;
 
@@ -95,14 +146,20 @@
 
     .fieldset__input {
       margin-bottom: 0;
+
+      &:nth-child(2n) {
+        margin-left: -2px;
+      }
     }
   }
 }
 
 .program-form__submit-container {
+  margin-top: 40px;
   padding-right: 20px;
 
   @media (min-width: $tablet-width) {
+    margin-top: 62px;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     column-gap: 60px;
@@ -110,7 +167,8 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding: 0 110px 72px;
+    margin-top: 69px;
+    padding: 0 110px 82px;
     column-gap: 80px;
   }
 }
@@ -119,10 +177,13 @@
   margin-top: 14px;
   margin-bottom: 22px;
   width: 100%;
+  font-size: 16px;
 
   @media (min-width: $tablet-width) {
     margin: 0;
     max-width: 100%;
+    font-size: 20px;
+    line-height: 0.8;
   }
 }
 

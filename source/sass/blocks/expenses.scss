@@ -1,8 +1,9 @@
 @import "../global/viewports.scss";
 @import "../global/colors.scss";
+@import "../global/fonts.scss";
 
 .expenses {
-  font-family: "Oswald", "Helvetica", sans-serif;
+  font-family: $font-headings;
   font-size: 14px;
   line-height: 20px;
   font-weight: 400;

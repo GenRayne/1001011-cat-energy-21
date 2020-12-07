@@ -1,4 +1,5 @@
 @import "../global/viewports.scss";
+@import "../global/fonts.scss";
 
 .how-it-works {
   padding: 29px 20px 41px;
@@ -13,6 +14,7 @@
 }
 
 .how-it-works__list {
+  counter-reset: itemNumber;
   margin: 0;
   padding: 0;
 
@@ -30,6 +32,7 @@
 }
 
 .how-it-works__item {
+  position: relative;
   list-style: none;
   margin-bottom: 20px;
 
@@ -37,8 +40,40 @@
     margin-bottom: 0;
   }
 
+  @media (min-width: $tablet-width) {
+    &::before {
+      counter-increment: itemNumber;
+      content: counter(itemNumber);
+      position: absolute;
+      top: 0;
+      left: calc(50% - 50px);
+      font-family: $font-headings;
+      font-size: 280px;
+      line-height: 0.73;
+      color: $grey-light;
+    }
+
+    &:first-child {
+      &::before {
+        top: -3px;
+        left: calc(50% - 43px);
+      }
+    }
+  }
+
   @media (min-width: $desktop-width) {
     margin-bottom: 0;
+
+    &::before {
+      left: calc(50% - 10px);
+    }
+
+    &:first-child {
+      &::before {
+        top: 0;
+        left: calc(50% - 5px);
+      }
+    }
   }
 }
 

@@ -1,5 +1,6 @@
 @import "../global/viewports.scss";
 @import "../global/colors.scss";
+@import "../global/fonts.scss";
 
 .results {
   @media (min-width: $tablet-width) {
@@ -42,7 +43,7 @@
 }
 
 .results__main-info {
-  font-family: "Oswald", "Helvetica", sans-serif;
+  font-family: $font-headings;
   font-size: 24px;
   line-height: 24px;
   font-weight: 400;

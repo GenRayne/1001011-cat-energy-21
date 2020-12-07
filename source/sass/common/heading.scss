@@ -1,9 +1,10 @@
 @import "../global/viewports.scss";
 @import "../global/colors.scss";
+@import "../global/fonts.scss";
 
 .heading {
   margin: 0;
-  font-family: "Oswald", "Helvetica", sans-serif;
+  font-family: $font-headings;
   font-size: 36px;
   line-height: 40px;
   font-weight: 400;

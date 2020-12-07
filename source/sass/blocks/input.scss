@@ -1,5 +1,6 @@
 @import "../global/viewports.scss";
 @import "../global/colors.scss";
+@import "../global/fonts.scss";
 
 .input {
   display: flex;
@@ -8,9 +9,8 @@
 
 .input__label {
   display: inline-block;
-  margin-right: 14px;
 
-  font-family: "Oswald", "Helvetica", sans-serif;
+  font-family: $font-headings;
   font-size: 16px;
   line-height: 18px;
   font-weight: 400;
@@ -21,15 +21,22 @@
     font-size: 20px;
     line-height: 1;
   }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 4px;
+  }
 }
 
 .input__field {
+  position: relative;
+  top: 2px;
+  margin-left: 14px;
   padding: 13px 15px;
   flex-grow: 1;
 
-  font-family: "Oswald", "Helvetica", sans-serif;
+  font-family: $font-headings;
   font-size: 16px;
-  line-height: 18px;
+  line-height: 17px;
   font-weight: 400;
   text-transform: uppercase;
   color: $black-base;
@@ -37,11 +44,25 @@
   border: thin solid $field-border-color;
 
   @media (min-width: $tablet-width) {
+    margin-left: 18px;
+    padding: 10px 19px;
     font-size: 20px;
     line-height: 1;
   }
 
   &--with-icon {
+    margin-left: 11px;
+    padding: 14px 14px 12px;
     border: thin solid $grey-dark;
+
+    @media (min-width: $tablet-width) {
+      margin-left: 17px;
+      padding: 9px 20px 11px;
+    }
+
+    @media (min-width: $desktop-width) {
+      margin-left: 18px;
+      padding: 9px 20px 11px 17px;
+    }
   }
 }

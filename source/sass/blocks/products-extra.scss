@@ -1,5 +1,6 @@
 @import "../global/viewports.scss";
 @import "../global/colors.scss";
+@import "../global/fonts.scss";
 
 .products-extra {
   @media (min-width: $desktop-width) {
@@ -84,7 +85,7 @@
   grid-area: heading;
   margin: 0;
   margin-bottom: 13px;
-  font-family: "Oswald", "Helvetica", sans-serif;
+  font-family: $font-headings;
   font-size: 16px;
   line-height: 16px;
   font-weight: 400;

@@ -1,5 +1,6 @@
 @import "../global/viewports.scss";
 @import "../global/colors.scss";
+@import "../global/fonts.scss";
 
 .nav {
   display: flex;
@@ -36,7 +37,7 @@
 .nav__link {
   display: block;
   padding: 22px;
-  font-family: "Oswald", "Helvetica", sans-serif;
+  font-family: $font-headings;
   font-size: 20px;
   line-height: 21px;
   font-weight: 500;
@@ -49,7 +50,7 @@
     flex-direction: row;
     flex-shrink: 0;
     flex-grow: 0;
-    padding: 8px 0;
+    padding: 6px 0;
 
     font-size: 18px;
     line-height: 24px;
@@ -62,6 +63,7 @@
   }
 
   @media (min-width: $desktop-width) {
+    padding: 8px 0;
     font-size: 20px;
     line-height: 24px;
   }

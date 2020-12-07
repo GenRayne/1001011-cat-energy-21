@@ -1,11 +1,13 @@
 @import "../global/viewports.scss";
 @import "../global/colors.scss";
+@import "../global/fonts.scss";
 
 .textarea {
-  padding: 13px 15px;
+  padding: 9px 13px 9px 15px;
   width: 100%;
+  min-height: 150px;
 
-  font-family: "Oswald", "Helvetica", sans-serif;
+  font-family: $font-headings;
   font-size: 16px;
   line-height: 18px;
   font-weight: 400;
@@ -13,8 +15,11 @@
   color: $black-base;
 
   border: thin solid $field-border-color;
+  resize: none;
 
   @media (min-width: $tablet-width) {
+    padding: 15px 15px 9px 18px;
+    min-height: 174px;
     font-size: 20px;
     line-height: 1;
   }

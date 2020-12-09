@@ -5,6 +5,22 @@
     margin: 0;
     margin-bottom: 28px;
   }
+
+  .products-extra__main-heading {
+    margin-top: 78px;
+
+    &::before {
+      flex-shrink: 0;
+      top: 15px;
+      margin-right: 38px;
+      width: 30px;
+    }
+
+    &::after {
+      top: 15px;
+      margin-left: 35px;
+    }
+  }
 }
 
 .catalog__heading {
@@ -12,7 +28,8 @@
   padding: 0 20px;
 
   @media (min-width: $tablet-width) {
-    margin-top: 60px;
+    margin-top: 50px;
+    margin-bottom: 48px;
     padding: 0 30px;
   }
 
@@ -20,4 +37,8 @@
     margin-top: 70px;
     padding: 0 70px;
   }
+}
+
+.catalog__special-offer {
+  margin: 69px 0 75px;
 }

@@ -9,7 +9,7 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     column-gap: 60px;
-    row-gap: 30px;
+    row-gap: 23px;
     padding: 0 30px;
   }
 
@@ -40,5 +40,11 @@
   @media (min-width: $tablet-width) {
     padding: 0;
     border: none;
+
+    &:last-child {
+      display: flex;
+      align-items: flex-end;
+      padding: 0;
+    }
   }
 }

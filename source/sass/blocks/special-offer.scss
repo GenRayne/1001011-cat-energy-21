@@ -4,7 +4,6 @@
 .special-offer {
   grid-area: special-offer;
   padding: 0 20px;
-  margin: 39px 0 35px;
 
   @media (min-width: $tablet-width) {
     padding: 0 30px;
@@ -33,10 +32,19 @@
   background-position: left bottom;
 
   @media (min-width: $tablet-width) {
-    background-position: center -300px;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 56px 124px 26px 79px;
+    min-height: 200px;
+    background-position: center -350px;
   }
 
   @media (min-width: $desktop-width) {
+    flex-direction: column;
+    align-items: center;
+    padding: 60px 30px 26px;
+    min-width: 245px;
+    min-height: 289px;
     background-position: left bottom;
   }
 }
@@ -53,4 +61,12 @@
   line-height: 20px;
   text-align: center;
   color: $white;
+
+  @media (min-width: $tablet-width) {
+    text-align: left;
+  }
+
+  @media (min-width: $desktop-width) {
+    text-align: center;
+  }
 }

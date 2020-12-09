@@ -10,6 +10,7 @@
       "extra-heading extra-heading"
       "extra-list    special-offer";
     column-gap: 80px;
+    row-gap: 80px;
     margin-bottom: 85px;
   }
 }
@@ -24,11 +25,17 @@
     margin-bottom: 80px;
     padding: 0;
   }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 0;
+  }
 }
 
 .products-extra__list {
   grid-area: extra-list;
   list-style: none;
+  margin: 0;
+  margin-top: 32px;
   padding: 0 20px;
 
   @media (min-width: $tablet-width) {
@@ -52,7 +59,7 @@
     "heading heading"
     "quantity price"
     "button button";
-  padding: 14px 0 18px;
+  padding: 13px 0 18px;
   border-bottom: thin solid $grey-dark;
 
   &:first-child {
@@ -70,13 +77,19 @@
   }
 
   @media (min-width: $tablet-width) {
-    padding: 26px 38px;
+    grid-template-columns: 1fr 200px 91px;
+    grid-template-areas:
+      "heading quantity price"
+      "button button button";
+    row-gap: 25px;
+    padding: 27px 38px;
   }
 
   @media (min-width: $desktop-width) {
-    padding: 15px 0;
-    grid-template-columns: repeat(2, 1fr) 50px 1fr;
+    padding: 16px 0;
+    grid-template-columns: 1fr 225px 60px 244px;
     grid-template-areas: "heading quantity price button";
+    column-gap: 20px;
     align-items: center;
   }
 }
@@ -84,7 +97,8 @@
 .products-extra__heading {
   grid-area: heading;
   margin: 0;
-  margin-bottom: 13px;
+  margin-bottom: 12px;
+  padding-left: 1px;
   font-family: $font-headings;
   font-size: 16px;
   line-height: 16px;
@@ -92,35 +106,59 @@
   text-transform: uppercase;
   color: $black-dark;
 
-  @media (min-width: $desktop-width) {
+  @media (min-width: $tablet-width) {
     margin-bottom: 0;
+    font-size: 20px;
   }
 }
 
 .products-extra__quantity {
   grid-area: quantity;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    text-align: right;
+  }
 }
 
 .products-extra__price {
   grid-area: price;
   text-align: right;
+
+  @media (min-width: $tablet-width) {
+    margin-right: -2px;
+    font-size: 16px;
+  }
+}
+
+.products-extra__quantity,
+.products-extra__price {
+  @media (min-width: $tablet-width) {
+    margin-top: 2px;
+    font-size: 16px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 8px;
+    text-align: left;
+  }
 }
 
 .products-extra__button {
   grid-area: button;
   display: block;
-  margin-top: 15px;
+  margin-top: 14px;
+  font-size: 16px;
 
   @media (min-width: $tablet-width) {
+    margin-top: 0;
     padding-top: 10px;
     padding-bottom: 8px;
     max-width: 100%;
-    font-size: 16px;
     line-height: 21px;
   }
 
   @media (min-width: $desktop-width) {
-    margin-top: 0;
-    justify-self: flex-end;
+    justify-self: stretch;
   }
 }

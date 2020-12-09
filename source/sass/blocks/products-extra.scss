@@ -10,6 +10,7 @@
       "extra-heading extra-heading"
       "extra-list    special-offer";
     column-gap: 80px;
+    row-gap: 80px;
     margin-bottom: 85px;
   }
 }
@@ -23,6 +24,10 @@
     margin-top: 70px;
     margin-bottom: 80px;
     padding: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 0;
   }
 }
 
@@ -81,9 +86,10 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding: 15px 0;
-    grid-template-columns: repeat(2, 1fr) 50px 1fr;
+    padding: 16px 0;
+    grid-template-columns: 1fr 225px 60px 244px;
     grid-template-areas: "heading quantity price button";
+    column-gap: 20px;
     align-items: center;
   }
 }
@@ -106,24 +112,12 @@
   }
 }
 
-.products-extra__quantity,
-.products-extra__price {
-  @media (min-width: $tablet-width) {
-    margin-top: 2px;
-    font-size: 16px;
-  }
-}
-
 .products-extra__quantity {
   grid-area: quantity;
 
   @media (min-width: $tablet-width) {
     font-size: 16px;
     text-align: right;
-  }
-
-  @media (min-width: $desktop-width) {
-    text-align: left;
   }
 }
 
@@ -134,6 +128,19 @@
   @media (min-width: $tablet-width) {
     margin-right: -2px;
     font-size: 16px;
+  }
+}
+
+.products-extra__quantity,
+.products-extra__price {
+  @media (min-width: $tablet-width) {
+    margin-top: 2px;
+    font-size: 16px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 8px;
+    text-align: left;
   }
 }
 
@@ -152,6 +159,6 @@
   }
 
   @media (min-width: $desktop-width) {
-    justify-self: flex-end;
+    justify-self: stretch;
   }
 }

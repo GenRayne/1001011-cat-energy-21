@@ -70,7 +70,6 @@
 .product__heading {
   margin: 0;
   margin-bottom: 12px;
-  padding-left: 3px;
   max-width: 95px;
   font-family: $font-headings;
   font-size: 16px;
@@ -80,10 +79,16 @@
 
   @media (min-width: $tablet-width) {
     margin: 0 auto 12px;
+    padding-left: 3px;
     max-width: 155px;
     font-size: 20px;
     line-height: 24px;
     text-align: center;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 17px;
+    line-height: 22px;
   }
 }
 
@@ -112,6 +117,10 @@
   &:not(.product__table-cell--header) {
     text-align: right;
   }
+}
+
+.product__weight {
+  padding-right: 2px;
 }
 
 .product__button {

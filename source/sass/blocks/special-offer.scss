@@ -40,6 +40,11 @@
   }
 
   @media (min-width: $desktop-width) {
+    flex-direction: column;
+    align-items: center;
+    padding: 60px 30px 26px;
+    min-width: 245px;
+    min-height: 289px;
     background-position: left bottom;
   }
 }
@@ -59,5 +64,9 @@
 
   @media (min-width: $tablet-width) {
     text-align: left;
+  }
+
+  @media (min-width: $desktop-width) {
+    text-align: center;
   }
 }

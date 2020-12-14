@@ -11,10 +11,14 @@
       <h1 class="visually-hidden">Cat Energy</h1>
       <div class="page-header__top-panel">
         <a class="logo-container">
-          <img src="https://via.placeholder.com/34x38" alt="Логотип" class="logo page-header__logo">
+          <picture>
+            <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
+            <source media="(min-width: 768px)" srcset="img/logo-desktop.svg">
+            <img src="img/logo-mobile.svg" alt="Логотип" class="logo page-header__logo">
+          </picture>
         </a>
-        <a class="logo-container">
-          <img src="https://via.placeholder.com/101x18" alt="Cat Energy" class="logo-text page-header__logo-text">
+        <a class="logo-container logo-container--additional">
+          <img src="img/logo-mobile-text.svg" alt="Cat Energy" class="logo-text page-header__logo-text">
         </a>
         <button class="nav-button" type="button" aria-label="Меню"></button>
       </div>
@@ -45,7 +49,7 @@
         <ul class="programs__list">
           <li class="programs__item">
             <article class="program">
-              <div class="program__image"></div>
+              <div class="program__image program__image--slim"></div>
               <h3 class="program__heading">Похудение</h3>
               <p class="text program__description">Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
               <a href="#" class="button program__button">
@@ -56,7 +60,7 @@
           </li>
           <li class="programs__item">
             <article class="program program--with-wide-picture">
-              <div class="program__image"></div>
+              <div class="program__image program__image--pro"></div>
               <h3 class="program__heading">Набор массы</h3>
               <p class="text program__description">Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!</p>
               <a href="#" class="button program__button">

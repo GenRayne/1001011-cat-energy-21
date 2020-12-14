@@ -29,11 +29,57 @@
   background-color: $primary-base;
   border-radius: 50%;
 
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: 1px;
+    left: -10px;
+    display: block;
+    width: 67px;
+    height: 53px;
+    background-repeat: no-repeat;
+  }
+
+  &--slim {
+    &::after {
+      background-image: url("../img/cat-slim.svg");
+      background-position: center 0;
+    }
+  }
+
+  &--pro {
+    &::after {
+      bottom: -1px;
+      background-image: url("../img/cat-pro.svg");
+      background-position: center center;
+    }
+  }
+
   @media (min-width: $tablet-width) {
     top: calc(50% - 95px);
     right: 62px;
     width: 200px;
     height: 200px;
+
+    &::after {
+      width: 268px;
+      height: 192px;
+      background-size: contain;
+    }
+
+    &--slim {
+      &::after {
+        bottom: 15px;
+        left: -28px;
+      }
+    }
+
+    &--pro {
+      &::after {
+        bottom: 5px;
+        left: -35px;
+      }
+    }
   }
 
   @media (min-width: $desktop-width) {
@@ -41,6 +87,25 @@
     left: 52px;
     width: 100px;
     height: 100px;
+
+    &::after {
+      width: 134px;
+      height: 97px;
+    }
+
+    &--slim {
+      &::after {
+        bottom: 8px;
+        left: -17px;
+      }
+    }
+
+    &--pro {
+      &::after {
+        bottom: 3px;
+        left: -18px;
+      }
+    }
   }
 }
 

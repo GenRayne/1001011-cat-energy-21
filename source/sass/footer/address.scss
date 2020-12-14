@@ -3,19 +3,8 @@
 @import "../global/fonts.scss";
 
 .address {
+  position: relative;
   background-color: $grey-dark;
-
-  @media (min-width: $desktop-width) {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-areas:
-      ".       map"
-      "address map"
-      "address map"
-      ".       map";
-    column-gap: 80px;
-    padding: 0 110px;
-  }
 }
 
 .address__container {
@@ -30,6 +19,9 @@
   }
 
   @media (min-width: $desktop-width) {
+    position: absolute;
+    top: calc(50% - 100px);
+    left: 110px;
     padding: 65px 71px 57px 75px;
     grid-column-gap: 80px;
     margin-top: -7px;

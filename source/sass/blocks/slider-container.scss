@@ -5,19 +5,37 @@
   margin: auto;
   width: 100%;
   height: 305px;
-  background-image: url("../img/image_cat_desktop-sm.png");
   background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center center;
+  background-size: contain;
+  background-position: center top 20px;
+
+  &--before {
+    background-image: url("../img/before-mobile.png");
+  }
+
+  &--after {
+    background-image: url("../img/after-mobile.png");
+    background-position: center top;
+  }
 
   @media (min-width: $tablet-width) {
     height: 654px;
-    background-position: center center;
+    background-position: center top;
+
+    &--before {
+      background-image: url("../img/cat-fat.png");
+    }
+
+    &--after {
+      background-image: url("../img/cat-skinny.png");
+      background-size: auto 530px;
+    }
   }
 
   @media (min-width: $desktop-width) {
     width: 100%;
     height: 672px;
+    background-position: center top 30px;
   }
 }
 

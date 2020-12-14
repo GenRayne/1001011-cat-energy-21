@@ -142,17 +142,13 @@
             <span class="expenses__value">15 000 РУБ.</span>
           </p>
         </section>
-        <div class="slider-container example__slider">
-          <div class="slider-picture">
-            <div class="slider-picture__left"></div>
-            <div class="slider-picture__right"></div>
-          </div>
+        <div class="slider-container slider-container--after example__slider">
           <div class="slider slider-container__slider">
-            <button type="button" class="slider__text">Было</button>
+            <button type="button" class="slider__text slider__text--before">Было</button>
             <div class="slider__line">
               <div class="slider__marker"></div>
             </div>
-            <button type="button" class="slider__text">Стало</button>
+            <button type="button" class="slider__text slider__text--after">Стало</button>
           </div>
         </div>
       </section>
@@ -204,5 +200,34 @@
         </a>
       </div>
     </footer>
+
+    <script>
+      const SliderClassName = {
+        DEFAULT: 'slider-container',
+        BEFORE: 'slider-container--before',
+        AFTER: 'slider-container--after',
+      };
+
+      const sliderImage = document.querySelector(`.${SliderClassName.DEFAULT}`);
+      const beforeButton = document.querySelector('.slider__text--before');
+      const afterButton = document.querySelector('.slider__text--after');
+
+      const handleBeforeButtonClick = () => {
+        if (sliderImage.classList.contains(SliderClassName.AFTER)) {
+          sliderImage.classList.remove(SliderClassName.AFTER);
+        }
+        sliderImage.classList.add(SliderClassName.BEFORE);
+      };
+
+      const handleAfterButtonClick = () => {
+        if (sliderImage.classList.contains(SliderClassName.BEFORE)) {
+          sliderImage.classList.remove(SliderClassName.BEFORE);
+        }
+        sliderImage.classList.add(SliderClassName.AFTER);
+      };
+
+      beforeButton.addEventListener('click', handleBeforeButtonClick);
+      afterButton.addEventListener('click', handleAfterButtonClick);
+    </script>
   </body>
 </html>

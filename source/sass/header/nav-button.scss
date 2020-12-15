@@ -1,9 +1,44 @@
 @import "../global/viewports.scss";
 
 .nav-button {
+  position: relative;
   margin-top: -5px;
+  padding: 0;
   width: 24px;
   height: 24px;
+  background: none;
+  border: none;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 11px;
+    left: 0;
+    display: block;
+    width: 25px;
+    height: 2px;
+    background-color: $black;
+    transform: rotate(45deg);
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 11px;
+    left: 0;
+    display: block;
+    width: 25px;
+    height: 2px;
+    background-color: $black;
+    transform: rotate(-45deg);
+  }
+
+  &:active {
+    &::before,
+    &::after {
+      opacity: 60%;
+    }
+  }
 
   @media (min-width: $tablet-width) {
     display: none;

@@ -3,6 +3,14 @@
 .logo-container {
   text-decoration: none;
 
+  &:hover {
+    opacity: 80%;
+  }
+
+  &:active {
+    opacity: 60%;
+  }
+
   &--additional {
     @media (min-width: $tablet-width) {
       display: none;

@@ -7,35 +7,70 @@
   height: 305px;
   background-repeat: no-repeat;
   background-size: contain;
-  background-position: center top 20px;
 
   &--before {
     background-image: url("../img/before-mobile.png");
+    background-size: 310px;
+    background-position: left -20px top 14px;
+
+    .slider__marker {
+      top: 3px;
+      left: 4px;
+      max-width: 6px;
+    }
   }
 
   &--after {
     background-image: url("../img/after-mobile.png");
-    background-position: center top;
+    background-size: 252px;
+    background-position: left 16px top 14px;
+
+    .slider__marker {
+      top: 3px;
+      left: 4px;
+      max-width: calc(100% - 8px);
+    }
   }
 
   @media (min-width: $tablet-width) {
+    width: 100%;
     height: 654px;
-    background-position: center top;
+    background-size: contain;
+
+    .slider__marker {
+      top: -14px;
+      left: 0;
+      max-width: 100%;
+    }
 
     &--before {
       background-image: url("../img/cat-fat.png");
+      background-size: 678px;
+      background-position: left 16px top 20px;
     }
 
     &--after {
       background-image: url("../img/cat-skinny.png");
-      background-size: auto 530px;
+      background-size: auto 520px;
+      background-position: left 107px top 20px;
+
+      .slider__marker {
+        left: calc(100% - 34px);
+      }
     }
   }
 
   @media (min-width: $desktop-width) {
     width: 100%;
     height: 672px;
-    background-position: center top 30px;
+
+    &--before {
+      background-position: left top 18px;
+    }
+
+    &--after {
+      background-position: left 90px top 18px;
+    }
   }
 }
 
@@ -52,7 +87,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    width: 93.5%;
-    left: 6.5%;
+    width: 88%;
+    left: 12%;
   }
 }

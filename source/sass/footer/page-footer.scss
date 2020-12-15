@@ -5,13 +5,13 @@
   background-color: $grey-light;
 
   .logo-text {
-    margin-bottom: 32px;
+    margin-bottom: 29px;
     width: 128px;
     height: 24px;
   }
 
   .social {
-    margin-bottom: 22px;
+    margin-bottom: 14px;
   }
 
   @media (min-width: $tablet-width) {
@@ -35,15 +35,16 @@
   align-items: center;
   padding: 20px;
   padding-top: 38px;
+  padding-bottom: 14px;
 
   @media (min-width: $tablet-width) {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: 170px 1fr 170px;
     column-gap: 40px;
-    padding: 55px 30px;
+    padding: 48px 30px 50px;
   }
 
   @media (min-width: $desktop-width) {
-    padding: 55px 110px;
+    padding: 48px 110px;
   }
 }

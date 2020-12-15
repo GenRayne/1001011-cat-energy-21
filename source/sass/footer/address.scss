@@ -20,9 +20,10 @@
 
   @media (min-width: $desktop-width) {
     position: absolute;
-    top: calc(50% - 100px);
+    top: calc(50% - 99px);
     left: 110px;
-    padding: 65px 71px 57px 75px;
+    padding: 67px 71px 55px 75px;
+    width: 570px;
     grid-column-gap: 80px;
     margin-top: -7px;
   }

@@ -57,6 +57,14 @@
     font-weight: 400;
     white-space: nowrap;
 
+    &:hover:not(.nav__link--active) {
+      opacity: 0.6;
+    }
+
+    &:active:not(.nav__link--active) {
+      opacity: 0.3;
+    }
+
     &--active {
       box-shadow: 0 2px 0 0 $primary-base;
     }

@@ -20,6 +20,14 @@
   border: none;
   border-bottom: thin dotted rgba(0, 0, 0, 0.25);
 
+  &:hover {
+    border-bottom: thin solid rgba(0, 0, 0, 0.25);
+  }
+
+  &:active {
+    border-color: transparent;
+  }
+
   @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 1;
@@ -62,6 +70,7 @@
     background-color: $white;
     border: thin solid $grey-dark;
     border-radius: 50%;
+    filter: drop-shadow(0 1px 3px rgba(0, 0, 0, 0.16));
     transition: 0.7s;
     transition-property: left;
 
@@ -75,6 +84,14 @@
       height: 8px;
       background-color: $primary-base;
       border-radius: 50%;
+    }
+
+    &:hover {
+      filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.19));
+    }
+
+    &:active {
+      border-color: $primary-base;
     }
   }
 }

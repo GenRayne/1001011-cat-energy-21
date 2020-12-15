@@ -157,6 +157,8 @@
   }
 
   &:hover {
+    background-color: transparent;
+
     .button__icon {
       background-image: url("../img/icon_arrow-long.svg");
     }

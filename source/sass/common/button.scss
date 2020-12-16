@@ -20,6 +20,16 @@
   border: none;
   cursor: pointer;
 
+  &:hover {
+    background-color: $primary-dark;
+  }
+
+  &:active {
+    .button__text {
+      opacity: 0.3;
+    }
+  }
+
   &--secondary {
     background-color: $grey-light;
     color: $black-base;

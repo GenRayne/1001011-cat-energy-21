@@ -24,16 +24,62 @@
 .program__image {
   position: absolute;
   top: 24px;
+  margin-left: 1px;
   width: 50px;
   height: 50px;
   background-color: $primary-base;
   border-radius: 50%;
+
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: -9px;
+    display: block;
+    width: 67px;
+    height: 53px;
+    background-repeat: no-repeat;
+  }
+
+  &--slim {
+    &::after {
+      background-image: url("../img/cat-slim.svg");
+      background-position: center 0;
+    }
+  }
+
+  &--pro {
+    &::after {
+      bottom: -1px;
+      background-image: url("../img/cat-pro.svg");
+      background-position: center center;
+    }
+  }
 
   @media (min-width: $tablet-width) {
     top: calc(50% - 95px);
     right: 62px;
     width: 200px;
     height: 200px;
+
+    &::after {
+      left: -34px;
+      width: 268px;
+      height: 192px;
+      background-size: contain;
+    }
+
+    &--slim {
+      &::after {
+        bottom: 18px;
+      }
+    }
+
+    &--pro {
+      &::after {
+        bottom: 5px;
+      }
+    }
   }
 
   @media (min-width: $desktop-width) {
@@ -41,6 +87,25 @@
     left: 52px;
     width: 100px;
     height: 100px;
+
+    &::after {
+      width: 134px;
+      height: 97px;
+    }
+
+    &--slim {
+      &::after {
+        bottom: 8px;
+        left: -17px;
+      }
+    }
+
+    &--pro {
+      &::after {
+        bottom: 3px;
+        left: -20px;
+      }
+    }
   }
 }
 
@@ -69,6 +134,7 @@
 }
 
 .program__button {
+  display: flex;
   margin-top: 22px;
   margin-left: -1px;
   padding: 18px 0 14px;
@@ -79,13 +145,49 @@
   background-color: transparent;
   border-top: thin solid #d9d9d9;
 
+  .button__icon {
+    display: block;
+    position: relative;
+    top: 2px;
+    margin-left: 15px;
+    width: 32px;
+    height: 10px;
+    background-image: url("../img/icon_arrow.svg");
+    background-repeat: no-repeat;
+  }
+
+  &:hover {
+    background-color: transparent;
+
+    .button__icon {
+      background-image: url("../img/icon_arrow-long.svg");
+    }
+  }
+
+  &:active {
+    .button__text,
+    .button__icon {
+      opacity: 30%;
+    }
+  }
+
   @media (min-width: $tablet-width) {
-    margin-top: 22px;
+    margin-top: 38px;
     font-size: 20px;
     border: none;
+
+    .button__icon {
+      top: 4px;
+      margin-left: 25px;
+    }
   }
 
   @media (min-width: $desktop-width) {
     margin-top: -3px;
+
+    .button__icon {
+      top: 3px;
+      margin-left: 27px;
+    }
   }
 }

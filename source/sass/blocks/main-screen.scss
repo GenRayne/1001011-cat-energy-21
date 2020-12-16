@@ -13,12 +13,12 @@
   flex-direction: column;
   justify-content: space-between;
   padding: 26px 20px 22px;
-  min-height: 500px;
+  min-height: 502px;
 
   background-image:
-    url("../img/d4c0fe600dd690a42aaf623045ebe148.png"),
+    url("../img/index-can-mobile.png"),
     linear-gradient(to bottom, $primary-opaque, $primary-opaque $cat-height-mobile + $cat-y-position-mobile + 20px, transparent $cat-height-mobile + $cat-y-position-mobile + 20px, transparent),
-    url("../img/4570a4a08306b2efdaf0011db30cbec6-sm.jpg"),
+    url("../img/index-background-mobile.jpg"),
     linear-gradient(to bottom, $cat-bg-color-left, $cat-bg-color-left $cat-height-mobile + $cat-y-position-mobile + 20px, transparent $cat-height-mobile + $cat-y-position-mobile + 20px, transparent);
   background-repeat:
     no-repeat,
@@ -28,23 +28,35 @@
   background-size:
     280px,
     auto calc(#{$cat-height-mobile} + 20px),
-    auto calc(#{$cat-height-mobile} + 20px),
+    auto $cat-height-mobile,
     auto calc(#{$cat-height-mobile} + 20px);
   background-position:
     center 165px,
     0 0,
-    right -50px top $cat-y-position-mobile,
+    right 0 top 0,
     0 0;
 
+  @media (min-resolution: 2dppx) {
+    background-image:
+      url("../img/index-can-mobile@2x.png"),
+      linear-gradient(to bottom, $primary-opaque, $primary-opaque $cat-height-mobile + $cat-y-position-mobile + 20px, transparent $cat-height-mobile + $cat-y-position-mobile + 20px, transparent),
+      url("../img/index-background-mobile@2x.jpg"),
+      linear-gradient(to bottom, $cat-bg-color-left, $cat-bg-color-left $cat-height-mobile + $cat-y-position-mobile + 20px, transparent $cat-height-mobile + $cat-y-position-mobile + 20px, transparent);
+  }
+
   @media (min-width: $tablet-width) {
-    padding: 50px 112px 70px;
-    min-height: 860px;
+    padding: 61px 112px 70px;
+    min-height: 871px;
     justify-content: flex-start;
 
-    background-image: url("../img/d4c0fe600dd690a42aaf623045ebe148.png");
+    background-image: url("../img/index-can-tablet.png");
     background-repeat: no-repeat;
-    background-size: 620px auto;
+    background-size: auto 609px;
     background-position: center 260px;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/index-can-tablet@2x.png");
+    }
   }
 
   @media (min-width: $desktop-width) {
@@ -54,9 +66,9 @@
     max-height: $cat-height-desktop;
 
     background-image:
-      url("../img/d4c0fe600dd690a42aaf623045ebe148.png"),
+      url("../img/index-can.png"),
       linear-gradient(to left, $primary-opaque, $primary-opaque 50%, transparent 50%, transparent),
-      url("../img/4570a4a08306b2efdaf0011db30cbec6-sm.jpg"),
+      url("../img/index-background-desktop.jpg"),
       linear-gradient(to left, $cat-bg-color-left, $cat-bg-color-left 50%, transparent 50%, transparent);
     background-repeat:
       no-repeat,
@@ -64,15 +76,23 @@
       no-repeat,
       no-repeat;
     background-size:
-      500px,
+      552px,
       100% auto,
       auto $cat-height-desktop,
       100% auto;
     background-position:
-      right 350px bottom 50px,
+      right 330px bottom 54px,
       right 0 top 0,
-      right -324px top,
+      right top,
       right 0 top 0;
+
+    @media (min-resolution: 2dppx) {
+      background-image:
+        url("../img/index-can@2x.png"),
+        linear-gradient(to left, $primary-opaque, $primary-opaque 50%, transparent 50%, transparent),
+        url("../img/index-background-desktop@2x.jpg"),
+        linear-gradient(to left, $cat-bg-color-left, $cat-bg-color-left 50%, transparent 50%, transparent);
+    }
   }
 }
 

@@ -50,15 +50,23 @@
     flex-direction: row;
     flex-shrink: 0;
     flex-grow: 0;
-    padding: 6px 0;
+    padding: 8px 0;
 
     font-size: 18px;
     line-height: 24px;
     font-weight: 400;
     white-space: nowrap;
 
+    &:hover:not(.nav__link--active) {
+      opacity: 0.6;
+    }
+
+    &:active:not(.nav__link--active) {
+      opacity: 0.3;
+    }
+
     &--active {
-      border-bottom: 2px solid $primary-base;
+      box-shadow: 0 2px 0 0 $primary-base;
     }
   }
 

@@ -14,7 +14,7 @@
 
   @media (min-width: $desktop-width) {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: 570px 1fr;
     grid-template-rows: 210px 235px 1fr;
     grid-template-areas:
       "heading     slider"
@@ -43,10 +43,10 @@
 .example__text {
   grid-area: description;
   margin-bottom: 25px;
-  padding-right: 10px;
 
   @media (min-width: $tablet-width) {
     margin-bottom: 38px;
+    padding-right: 10px;
   }
 
   @media (min-width: $desktop-width) {

@@ -7,5 +7,11 @@
 
   @media (min-width: $tablet-width) {
     height: 400px;
+    width: 768px;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-area: auto;
+    width: 1440px;
   }
 }

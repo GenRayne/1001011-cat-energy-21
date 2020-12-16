@@ -19,6 +19,8 @@
   width: 60px;
   height: 60px;
   background-color: $primary-base;
+  background-repeat: no-repeat;
+  background-position: center;
 
   @media (min-width: $tablet-width) {
     position: static;

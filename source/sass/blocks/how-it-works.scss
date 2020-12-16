@@ -2,7 +2,7 @@
 @import "../global/fonts.scss";
 
 .how-it-works {
-  padding: 29px 20px 41px;
+  padding: 27px 20px 40px;
 
   @media (min-width: $tablet-width) {
     padding: 45px 30px 32px;
@@ -10,6 +10,14 @@
 
   @media (min-width: $desktop-width) {
     padding: 72px 110px 0;
+  }
+}
+
+.how-it-works__heading {
+  margin-bottom: 40px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 72px;
   }
 }
 
@@ -35,6 +43,22 @@
   position: relative;
   list-style: none;
   margin-bottom: 20px;
+
+  &:nth-child(1) .feature__image {
+    background-image: url("../img/icon_leaf.svg");
+  }
+
+  &:nth-child(2) .feature__image {
+    background-image: url("../img/icon_tub.svg");
+  }
+
+  &:nth-child(3) .feature__image {
+    background-image: url("../img/icon_eat.svg");
+  }
+
+  &:nth-child(4) .feature__image {
+    background-image: url("../img/icon_alarm.svg");
+  }
 
   &:last-child {
     margin-bottom: 0;
@@ -74,13 +98,5 @@
         left: calc(50% - 5px);
       }
     }
-  }
-}
-
-.how-it-works__heading {
-  margin-bottom: 39px;
-
-  @media (min-width: $tablet-width) {
-    margin-bottom: 72px;
   }
 }

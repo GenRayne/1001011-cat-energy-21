@@ -53,11 +53,11 @@
   padding: 26px 20px 28px;
 
   @media (min-width: $tablet-width) {
-    padding: 63px 70px 63px;
+    padding: 74px 70px 63px;
   }
 
   @media (min-width: $desktop-width) {
-    padding: 76px 110px;
+    padding: 84px 110px;
     padding-bottom: 0;
   }
 }
@@ -155,7 +155,7 @@
 }
 
 .program-form__submit-container {
-  margin-top: 40px;
+  margin-top: 38px;
   padding-right: 20px;
 
   @media (min-width: $tablet-width) {

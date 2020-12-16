@@ -3,6 +3,7 @@
 @import "../global/fonts.scss";
 
 .input {
+  position: relative;
   display: flex;
   align-items: center;
 }
@@ -32,6 +33,7 @@
   top: 2px;
   margin-left: 14px;
   padding: 13px 15px;
+  height: 45px;
   flex-grow: 1;
 
   font-family: $font-headings;
@@ -43,26 +45,112 @@
 
   border: thin solid $field-border-color;
 
+  &:hover {
+    border-color: $grey-dark;
+  }
+
+  &:focus {
+    padding: 13px 14px;
+    outline: none;
+    border: 2px solid $black-base;
+  }
+
   @media (min-width: $tablet-width) {
     margin-left: 18px;
     padding: 10px 19px;
+    height: 50px;
     font-size: 20px;
     line-height: 1;
+
+    &:focus {
+      padding: 10px 18px;
+    }
   }
 
   &--with-icon {
     margin-left: 11px;
-    padding: 14px 14px 12px;
+    padding: 13px 14px;
+    padding-right: 45px;
     border: thin solid $grey-dark;
+
+    &:focus {
+      padding-left: 13px;
+      padding-right: 45px;
+
+      + .input__icon {
+        stroke: $primary-base;
+
+        &--filled {
+          stroke: none;
+          fill: $primary-base;
+        }
+      }
+    }
 
     @media (min-width: $tablet-width) {
       margin-left: 17px;
       padding: 9px 20px 11px;
+      padding-right: 45px;
+
+      &:focus {
+        padding-top: 8px;
+        padding-left: 19px;
+        padding-right: 45px;
+      }
     }
 
     @media (min-width: $desktop-width) {
       margin-left: 18px;
-      padding: 9px 20px 11px 17px;
+      padding: 9px 45px 11px 17px;
+
+      &:focus {
+        padding-top: 8px;
+        padding-left: 16px;
+        padding-right: 45px;
+      }
+    }
+  }
+}
+
+.input__icon {
+  position: absolute;
+  right: 15px;
+  stroke: $black-dark;
+
+  &--filled {
+    top: 14px;
+    stroke: none;
+    fill: $black-dark;
+  }
+
+  &--email {
+    top: 18px;
+  }
+
+  &--phone {
+    top: 15px;
+    right: 14px;
+  }
+
+  @media (min-width: $tablet-width) {
+    &--email {
+      top: 20px;
+      right: 18px;
+    }
+
+    &--phone {
+      top: 16px;
+      right: 18px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    &--email {
+      right: 19px;
+    }
+
+    &--phone {
+      right: 17px;
     }
   }
 }

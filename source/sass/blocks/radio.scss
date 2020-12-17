@@ -10,6 +10,16 @@
   opacity: 0;
   margin-right: 29px;
 
+  &:disabled {
+    + .radio__label {
+      opacity: 0.3;
+
+      &::before {
+        border-color: $grey-dark;
+      }
+    }
+  }
+
   @media (min-width: $tablet-width) {
     margin-right: 43px;
   }
@@ -39,6 +49,12 @@
       left: -60px;
       width: 40px;
       height: 40px;
+    }
+  }
+
+  &:hover {
+    &::before {
+      border-color: $checkbox-hover-color;
     }
   }
 

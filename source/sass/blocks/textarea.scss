@@ -17,10 +17,24 @@
   border: thin solid $field-border-color;
   resize: none;
 
+  &:hover {
+    border-color: $grey-dark;
+  }
+
+  &:focus {
+    padding: 8px 12px 9px 14px;
+    outline: none;
+    border: 2px solid $black-base;
+  }
+
   @media (min-width: $tablet-width) {
     padding: 15px 15px 9px 18px;
     min-height: 174px;
     font-size: 20px;
     line-height: 1;
+
+    &:focus {
+      padding: 14px 14px 9px 17px;
+    }
   }
 }

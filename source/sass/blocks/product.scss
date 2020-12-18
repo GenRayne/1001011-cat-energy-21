@@ -23,7 +23,7 @@
     align-items: center;
 
     @media (min-width: $tablet-width) {
-      padding: 48px 36px 37px;
+      padding: 50px 36px 37px;
       width: 100%;
       height: 429px;
       background-image: none;
@@ -42,20 +42,41 @@
 }
 
 .product__image-container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
   grid-area: image;
-  align-self: center;
+  min-height: 123px;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 39px;
+    margin-top: 5px;
+    margin-bottom: 34px;
   }
 }
 
 .product__image {
   display: block;
-  margin: auto;
 
   @media (min-width: $tablet-width) {
+    margin-bottom: 0;
+    width: auto;
     height: 200px;
+
+    &--small {
+      height: 172px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    position: absolute;
+    width: 172px;
+    height: 196px;
+
+    &--small {
+      width: 161px;
+      height: 172px;
+    }
   }
 }
 
@@ -126,7 +147,7 @@
 .product__button {
   grid-area: button;
   display: block;
-  margin-top: 20px;
+  // margin-top: 20px;
   font-size: 16px;
   line-height: 20px;
 
@@ -141,10 +162,35 @@
 }
 
 .product__more-icon {
+  position: relative;
   margin-bottom: 24px;
   width: 30px;
   height: 30px;
-  background-color: $icon-color;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: calc(50% - 1px);
+    left: 0;
+    display: block;
+    width: 100%;
+    height: 2px;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: calc(50% - 1px);
+    display: block;
+    width: 2px;
+    height: 100%;
+  }
+
+  &::before,
+  &::after {
+    background-color: $icon-color;
+  }
 
   @media (min-width: $tablet-width) {
     margin-bottom: 50px;
@@ -174,6 +220,7 @@
 
 .product__more-description {
   margin: 0;
+  margin-bottom: 20px;
   font-size: 12px;
   line-height: 16px;
   font-weight: 400;

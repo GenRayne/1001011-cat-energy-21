@@ -46,6 +46,10 @@
     }
   }
 
+  &--no-js {
+    opacity: 0;
+  }
+
   &:active {
     &::before,
     &::after {

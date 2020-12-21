@@ -25,11 +25,7 @@
 
 .nav__item {
   list-style: none;
-  border-top: thin solid $border-color;
-
-  &:last-child {
-    border-bottom: thin solid $border-color;
-  }
+  border-bottom: thin solid $border-color;
 
   @media (min-width: $tablet-width) {
     margin-right: 35px;

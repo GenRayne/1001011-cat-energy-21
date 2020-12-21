@@ -26,10 +26,12 @@
   align-items: center;
   justify-content: space-between;
   padding: 13px 20px 11px;
+  border-bottom: thin solid $border-color;
 
   @media (min-width: $tablet-width) {
     margin-right: 20px;
     padding: 0;
+    border-bottom: none;
   }
 
   @media (min-width: $desktop-width) {

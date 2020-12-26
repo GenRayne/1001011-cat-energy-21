@@ -8,6 +8,12 @@
 }
 
 .address__container {
+  position: relative;
+  margin: 0 auto;
+  max-width: 1440px;
+}
+
+.address__block {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-area: address;

@@ -2,14 +2,25 @@
 @import "../global/colors.scss";
 
 .example {
-  padding: 27px 20px;
   background-color: $grey-base-2;
 
   @media (min-width: $tablet-width) {
-    padding: 43px 30px 0;
     border-top: thin solid $border-color;
     background-color: transparent;
     background-image: linear-gradient(to top, $grey-base-2 462px, transparent 462px, transparent);
+  }
+
+  @media (min-width: $desktop-width) {
+    border-top: none;
+    background-image: linear-gradient(to top, $grey-base-2 462px, transparent 462px, transparent);
+  }
+}
+
+.example__container {
+  padding: 27px 20px;
+
+  @media (min-width: $tablet-width) {
+    padding: 43px 30px 0;
   }
 
   @media (min-width: $desktop-width) {
@@ -20,9 +31,9 @@
       "heading     slider"
       "description slider"
       "results     slider";
+    margin: 0 auto;
     padding: 0 110px;
-    border-top: none;
-    background-image: linear-gradient(to top, $grey-base-2 462px, transparent 462px, transparent);
+    max-width: 1440px;
   }
 }
 

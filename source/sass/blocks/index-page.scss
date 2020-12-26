@@ -6,11 +6,12 @@
     @media (min-width: $desktop-width) {
       position: absolute;
       top: 53px;
-      left: 110px;
+      left: calc(50% - 610px);
 
       margin-right: 34px;
       padding: 0;
-      width: calc(100% - 220px);
+      width: 100%;
+      max-width: 1220px;
     }
   }
 

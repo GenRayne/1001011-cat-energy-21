@@ -55,13 +55,15 @@
 
     <main class="page-content">
       <section class="main-screen">
-        <div class="main-screen__heading-container">
-          <h2 class="heading heading--inverted main-screen__heading">Функциональное питание для котов</h2>
-          <p class="main-screen__slogan">Занялся собой? Займись котом!</p>
+        <div class="main-screen__container">
+          <div class="main-screen__heading-container">
+            <h2 class="heading heading--inverted main-screen__heading">Функциональное питание для котов</h2>
+            <p class="main-screen__slogan">Занялся собой? Займись котом!</p>
+          </div>
+          <a href="form.html" class="button main-screen__button">
+            <span class="button__text">Подобрать программу</span>
+          </a>
         </div>
-        <a href="form.html" class="button main-screen__button">
-          <span class="button__text">Подобрать программу</span>
-        </a>
       </section>
 
       <section class="programs">
@@ -139,36 +141,38 @@
       </section>
 
       <section class="example">
-        <h2 class="heading example__heading">Живой пример</h2>
-        <p class="text example__text">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.</p>
-        <section class="results example__results">
-          <h3 class="visually-hidden">Результат</h3>
-          <dl class="results__list">
-            <div class="results__item">
-              <dt class="results__main-info">5 кг</dt>
-              <dd class="results__additional-info-container">
-                <span class="results__additional-info">снижение веса</span>
-              </dd>
+        <div class="example__container">
+          <h2 class="heading example__heading">Живой пример</h2>
+          <p class="text example__text">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.</p>
+          <section class="results example__results">
+            <h3 class="visually-hidden">Результат</h3>
+            <dl class="results__list">
+              <div class="results__item">
+                <dt class="results__main-info">5 кг</dt>
+                <dd class="results__additional-info-container">
+                  <span class="results__additional-info">снижение веса</span>
+                </dd>
+              </div>
+              <div class="results__item">
+                <dt class="results__main-info">60 дней</dt>
+                <dd class="results__additional-info-container">
+                  <span class="results__additional-info">затрачено времени</span>
+                </dd>
+              </div>
+            </dl>
+            <p class="expenses results__expenses">
+              <span class="expenses__text">Затраты на питание:</span>
+              <span class="expenses__value">15 000 РУБ.</span>
+            </p>
+          </section>
+          <div class="slider-container slider-container--after example__slider">
+            <div class="slider slider-container__slider">
+              <button type="button" class="slider__text slider__text--before">Было</button>
+              <div class="slider__line">
+                <div class="slider__marker"></div>
+              </div>
+              <button type="button" class="slider__text slider__text--after">Стало</button>
             </div>
-            <div class="results__item">
-              <dt class="results__main-info">60 дней</dt>
-              <dd class="results__additional-info-container">
-                <span class="results__additional-info">затрачено времени</span>
-              </dd>
-            </div>
-          </dl>
-          <p class="expenses results__expenses">
-            <span class="expenses__text">Затраты на питание:</span>
-            <span class="expenses__value">15 000 РУБ.</span>
-          </p>
-        </section>
-        <div class="slider-container slider-container--after example__slider">
-          <div class="slider slider-container__slider">
-            <button type="button" class="slider__text slider__text--before">Было</button>
-            <div class="slider__line">
-              <div class="slider__marker"></div>
-            </div>
-            <button type="button" class="slider__text slider__text--after">Стало</button>
           </div>
         </div>
       </section>
@@ -176,24 +180,26 @@
 
     <footer class="page-footer">
       <section class="address">
-        <h2 class="visually-hidden">Наш адрес</h2>
         <div class="address__container">
-          <p class="address__invitation">Приглашаем<br> к сотрудничеству<br> дилеров!</p>
-          <p class="text address__text">
-            <span class="address__street">ул. Большая<br> Конюшенная, д. 19/8</span>
-            <span class="address__city">Санкт-Петербург</span>
-          </p>
-        </div>
-        <div class="map map--interactive"></div>
-        <picture>
-          <source type="image/webp" media="(min-width: 1440px)" srcset="img/Map.webp, img/Map@2x.webp 2x">
-          <source type="image/webp" media="(min-width: 768px)" srcset="img/location-tablet.webp, img/location-tablet@2x.webp 2x">
-          <source type="image/webp" srcset="img/location-mobile.webp, img/location-mobile@2x.webp 2x">
+          <h2 class="visually-hidden">Наш адрес</h2>
+          <div class="address__block">
+            <p class="address__invitation">Приглашаем<br> к сотрудничеству<br> дилеров!</p>
+            <p class="text address__text">
+              <span class="address__street">ул. Большая<br> Конюшенная, д. 19/8</span>
+              <span class="address__city">Санкт-Петербург</span>
+            </p>
+          </div>
+          <div class="map map--interactive"></div>
+          <picture>
+            <source type="image/webp" media="(min-width: 1440px)" srcset="img/Map.webp, img/Map@2x.webp 2x">
+            <source type="image/webp" media="(min-width: 768px)" srcset="img/location-tablet.webp, img/location-tablet@2x.webp 2x">
+            <source type="image/webp" srcset="img/location-mobile.webp, img/location-mobile@2x.webp 2x">
 
-          <source media="(min-width: 1440px)" srcset="img/Map.png, img/Map@2x.png 2x">
-          <source media="(min-width: 768px)" srcset="img/location-tablet.png, img/location-tablet@2x.png 2x">
-          <img src="img/location-mobile.png" srcset="img/location-mobile@2x.png 2x" width="320" height="362" alt="Расположение на карте" class="map">
-        </picture>
+            <source media="(min-width: 1440px)" srcset="img/Map.png, img/Map@2x.png 2x">
+            <source media="(min-width: 768px)" srcset="img/location-tablet.png, img/location-tablet@2x.png 2x">
+            <img src="img/location-mobile.png" srcset="img/location-mobile@2x.png 2x" width="320" height="362" alt="Расположение на карте" class="map">
+          </picture>
+        </div>
       </section>
       <div class="page-footer__bottom-container">
         <a class="page-footer__logo">

@@ -57,8 +57,10 @@
   }
 
   @media (min-width: $desktop-width) {
+    margin: 0 auto;
     padding: 84px 110px;
     padding-bottom: 0;
+    max-width: $desktop-width;
   }
 }
 
@@ -109,8 +111,10 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     column-gap: 80px;
+    margin: 0 auto;
     padding-right: 110px;
     padding-left: 110px;
+    max-width: $desktop-width;
 
     .fieldset,
     .fieldset__inputs-container {
@@ -167,8 +171,9 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin-top: 69px;
+    margin: 69px auto 0;
     padding: 0 110px 82px;
+    max-width: $desktop-width;
     column-gap: 80px;
   }
 }

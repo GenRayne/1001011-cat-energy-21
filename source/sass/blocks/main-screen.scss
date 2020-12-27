@@ -97,7 +97,7 @@ $cat-bg-color-left: #525156;
   @media (min-width: $desktop-width) {
     padding: 224px 185px 220px;
     margin: 0 auto 82px;
-    max-width: 1440px;
+    max-width: $desktop-width;
     min-height: $cat-height-desktop;
     max-height: $cat-height-desktop;
   }

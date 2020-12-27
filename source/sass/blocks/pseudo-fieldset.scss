@@ -4,6 +4,11 @@
 .pseudo-fieldset {
   position: relative;
   display: block;
+
+  @media (min-width: $desktop-width) {
+    margin: 0 auto;
+    max-width: $desktop-width;
+  }
 }
 
 .pseudo-fieldset__heading {
@@ -48,11 +53,8 @@
     }
 
     @media (min-width: $desktop-width) {
-      width: 90px;
-    }
-
-    @media (min-width: $desktop-width) {
       top: 23px;
+      width: 90px;
     }
   }
 }

@@ -6,6 +6,7 @@
     "@htmlacademy/editorconfig-cli": "1.0.0",
     "autoprefixer": "10.0.2",
     "browser-sync": "2.26.13",
+    "gh-pages": "^3.1.0",
     "gulp": "4.0.2",
     "gulp-plumber": "1.2.1",
     "gulp-postcss": "9.0.0",
@@ -20,7 +21,8 @@
     "stylelint": "stylelint \"source/sass/**/*.scss\" --syntax scss",
     "test": "npm run editorconfig && npm run stylelint",
     "build": "gulp styles",
-    "start": "gulp"
+    "start": "gulp",
+    "deploy": "gulp deploy"
   },
   "browserslist": [
     "last 2 versions",

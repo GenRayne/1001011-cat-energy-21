@@ -5,6 +5,7 @@ const sass = require("gulp-sass");
 const postcss = require("gulp-postcss");
 const autoprefixer = require("autoprefixer");
 const sync = require("browser-sync").create();
+const ghpages = require("gh-pages");
 
 // Styles
 
@@ -49,3 +50,15 @@ const watcher = () => {
 exports.default = gulp.series(
   styles, server, watcher
 );
+
+const pages = (done) => {
+  ghpages.publish(
+    "source",
+    {
+      src: "{,!(sass)/}!(README*)",
+    },
+    done
+  );
+};
+
+exports.deploy = gulp.series(styles, pages);

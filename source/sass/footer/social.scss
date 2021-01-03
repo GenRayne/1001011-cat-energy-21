@@ -109,6 +109,10 @@
     }
   }
 
+  &:active {
+    opacity: 0.3;
+  }
+
   @media (min-width: $tablet-width) {
     margin-top: -2px;
     width: 30px;

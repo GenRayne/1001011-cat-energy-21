@@ -39,7 +39,9 @@
     }
 
     @media (min-width: $desktop-width) {
+      margin: 0 auto;
       padding-left: 70px;
+      max-width: $desktop-width;
     }
   }
 }

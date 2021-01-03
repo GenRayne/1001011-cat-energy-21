@@ -18,6 +18,8 @@
 
   @media (min-width: $desktop-width) {
     padding: 53px 110px 0;
+    max-width: $desktop-width;
+    margin: 0 auto;
   }
 }
 

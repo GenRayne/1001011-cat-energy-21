@@ -2,19 +2,13 @@
 @import "../global/colors.scss";
 @import "../global/fonts.scss";
 
+$cat-height-mobile: 302px;
+$cat-y-position-mobile: -20px;
+$cat-width-desktop: 720px;
+$cat-height-desktop: 694px;
+$cat-bg-color-left: #525156;
+
 .main-screen {
-  $cat-height-mobile: 302px;
-  $cat-y-position-mobile: -20px;
-  $cat-width-desktop: 720px;
-  $cat-height-desktop: 694px;
-  $cat-bg-color-left: #525156;
-
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  padding: 26px 20px 22px;
-  min-height: 502px;
-
   background-image:
     url("../img/index-can-mobile.png"),
     linear-gradient(to bottom, $primary-opaque, $primary-opaque $cat-height-mobile + $cat-y-position-mobile + 20px, transparent $cat-height-mobile + $cat-y-position-mobile + 20px, transparent),
@@ -45,10 +39,6 @@
   }
 
   @media (min-width: $tablet-width) {
-    padding: 61px 112px 70px;
-    min-height: 871px;
-    justify-content: flex-start;
-
     background-image: url("../img/index-can-tablet.png");
     background-repeat: no-repeat;
     background-size: auto 609px;
@@ -60,11 +50,6 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding: 224px 185px 220px;
-    margin-bottom: 82px;
-    min-height: $cat-height-desktop;
-    max-height: $cat-height-desktop;
-
     background-image:
       url("../img/index-can.png"),
       linear-gradient(to left, $primary-opaque, $primary-opaque 50%, transparent 50%, transparent),
@@ -93,6 +78,28 @@
         url("../img/index-background-desktop@2x.jpg"),
         linear-gradient(to left, $cat-bg-color-left, $cat-bg-color-left 50%, transparent 50%, transparent);
     }
+  }
+}
+
+.main-screen__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 26px 20px 22px;
+  min-height: 502px;
+
+  @media (min-width: $tablet-width) {
+    padding: 61px 112px 70px;
+    min-height: 871px;
+    justify-content: flex-start;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 224px 185px 220px;
+    margin: 0 auto 82px;
+    max-width: $desktop-width;
+    min-height: $cat-height-desktop;
+    max-height: $cat-height-desktop;
   }
 }
 

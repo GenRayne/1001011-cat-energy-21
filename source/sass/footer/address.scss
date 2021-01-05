@@ -19,6 +19,7 @@
   grid-area: address;
   padding: 28px 20px 27px;
   background-color: $white;
+  z-index: 5;
 
   @media (min-width: $tablet-width) {
     padding: 67px 71px 57px;

@@ -12,7 +12,6 @@
     position: absolute;
     width: 100%;
     height: 362px;
-    opacity: 0.5;
   }
 
   @media (min-width: $tablet-width) {
@@ -24,6 +23,20 @@
 
   @media (min-width: $desktop-width) {
     grid-area: auto;
+    width: 100%;
+    max-width: $desktop-width;
+  }
+}
+
+.map__gmap-canvas {
+  @media (min-width: $tablet-width) {
+    height: 400px;
+    max-height: 400px;
+    width: 100%;
+    max-width: 768px;
+  }
+
+  @media (min-width: $desktop-width) {
     width: 100%;
     max-width: $desktop-width;
   }

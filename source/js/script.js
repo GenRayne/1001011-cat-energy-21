@@ -44,20 +44,44 @@ const beforeButton = document.querySelector('.slider__text--before');
 const afterButton = document.querySelector('.slider__text--after');
 
 if (sliderImage && beforeButton && afterButton) {
-  const handleBeforeButtonClick = () => {
-    if (sliderImage.classList.contains(SliderClassName.AFTER)) {
-      sliderImage.classList.remove(SliderClassName.AFTER);
+  handleStateButtonClick = (classToRemove, classToAdd) = () => {
+    if (sliderImage.classList.contains(classToRemove)) {
+      sliderImage.classList.remove(classToRemove);
     }
-    sliderImage.classList.add(SliderClassName.BEFORE);
+    sliderImage.classList.add(classToAdd);
+  }
+
+  beforeButton.addEventListener('click', handleStateButtonClick(SliderClassName.AFTER, SliderClassName.BEFORE));
+  afterButton.addEventListener('click', handleStateButtonClick(SliderClassName.BEFORE, SliderClassName.AFTER));
+}
+
+// ---------------------- Form ----------------------
+
+const INVALID_CLASS = 'input__field--invalid';
+const form = document.querySelector('.program-form');
+const submitButton = document.querySelector('.program-form__sumbit-button');
+const requiredFields = document.querySelectorAll('.input__field--required');
+
+if (form && submitButton && requiredFields.length) {
+  const markInvalid = (field) => {
+    field.classList.add(INVALID_CLASS);
+
+    const handleInput = () => {
+      field.classList.remove(INVALID_CLASS);
+      field.removeEventListener('input', handleInput);
+    };
+
+    field.addEventListener('input', handleInput);
   };
 
-  const handleAfterButtonClick = () => {
-    if (sliderImage.classList.contains(SliderClassName.BEFORE)) {
-      sliderImage.classList.remove(SliderClassName.BEFORE);
-    }
-    sliderImage.classList.add(SliderClassName.AFTER);
+  const handleSubmit = (event) => {
+    requiredFields.forEach((field) => {
+      if (!field.value) {
+        event.preventDefault();
+        markInvalid(field);
+      }
+    });
   };
 
-  beforeButton.addEventListener('click', handleBeforeButtonClick);
-  afterButton.addEventListener('click', handleAfterButtonClick);
+  form.addEventListener('submit', handleSubmit);
 }

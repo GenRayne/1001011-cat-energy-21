@@ -110,6 +110,12 @@
       }
     }
   }
+
+  &--invalid {
+    padding: 13px 14px;
+    outline: none;
+    border: 2px solid $error;
+  }
 }
 
 .input__icon {

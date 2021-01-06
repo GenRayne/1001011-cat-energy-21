@@ -49,11 +49,11 @@
             <div class="fieldset__inputs-container">
               <label class="input fieldset__input">
                 <span class="input__label">Имя:*</span>
-                <input type="text" class="input__field" name="name" placeholder="Барсик" required>
+                <input type="text" class="input__field input__field--required" name="name" placeholder="Барсик">
               </label>
               <label class="input fieldset__input">
                 <span class="input__label">Вес (кг):*</span>
-                <input type="text" class="input__field" name="weight" placeholder="7" required>
+                <input type="text" class="input__field input__field--required" name="weight" placeholder="7">
               </label>
               <label class="input fieldset__input">
                 <span class="input__label">Возраст (лет):</span>
@@ -89,14 +89,14 @@
             <div class="fieldset__inputs-container program-form__contacts">
               <label class="input fieldset__input">
                 <span class="input__label">E-mail:*</span>
-                <input type="email" class="input__field input__field--with-icon" name="e-mail" placeholder="kuklachev@gmail.com" required>
+                <input type="email" class="input__field input__field--with-icon input__field--required" name="e-mail" placeholder="kuklachev@gmail.com">
                 <svg class="input__icon input__icon--email" width="20" height="15">
                   <use xlink:href="./img/sprite.svg#icon_email"></use>
                 </svg>
               </label>
               <label class="input fieldset__input">
                 <span class="input__label">Телефон:*</span>
-                <input type="tel" class="input__field input__field--with-icon" name="phone-number" placeholder="8 (960) 900-60-90" required pattern="[0-9]-\([0-9]{3}\)-[0-9]{3}-[0-9]{2}-[0-9]{2}">
+                <input type="tel" class="input__field input__field--with-icon input__field--required" name="phone-number" placeholder="8 (960) 900-60-90" pattern="[0-9] ?\([0-9]{3}\) ?[0-9]{3}-[0-9]{2}-[0-9]{2}">
                 <svg class="input__icon input__icon--filled input__icon--phone" width="20" height="21">
                   <use xlink:href="./img/sprite.svg#icon_phone"></use>
                 </svg>

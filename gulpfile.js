@@ -95,6 +95,7 @@ const copy = () => {
     "source/fonts/*.{woff2,woff}",
     "source/*.ico",
     "source/img/**/*.{jpg,png,svg}",
+    "source/js/modernizr-webp.js"
   ],
     {
       base: "source"

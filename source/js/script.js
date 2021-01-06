@@ -67,6 +67,10 @@ const submitButton = document.querySelector('.program-form__sumbit-button');
 const requiredFields = document.querySelectorAll('.input__field--required');
 
 if (form && submitButton && requiredFields.length) {
+  requiredFields.forEach((field) => {
+    field.removeAttribute('required');
+  });
+
   const markInvalid = (field) => {
     field.classList.add(INVALID_CLASS);
 

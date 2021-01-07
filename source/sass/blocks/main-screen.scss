@@ -1,12 +1,7 @@
 @import "../global/viewports.scss";
 @import "../global/colors.scss";
 @import "../global/fonts.scss";
-
-$cat-height-mobile: 302px;
-$cat-y-position-mobile: -20px;
-$cat-width-desktop: 720px;
-$cat-height-desktop: 694px;
-$cat-bg-color-left: #525156;
+@import "../global/other.scss";
 
 .main-screen {
   background-image:

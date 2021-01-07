@@ -11,8 +11,8 @@
   &--interactive {
     position: absolute;
     width: 100%;
+    max-width: 100%;
     height: 362px;
-    opacity: 0.5;
   }
 
   @media (min-width: $tablet-width) {
@@ -20,11 +20,30 @@
     max-height: 400px;
     width: 100%;
     max-width: 768px;
+
+    &--interactive {
+      max-width: 100%;
+    }
   }
 
   @media (min-width: $desktop-width) {
     grid-area: auto;
     width: 100%;
     max-width: $desktop-width;
+
+    &--interactive {
+      max-width: 100%;
+    }
+  }
+}
+
+.map__google-maps {
+  width: 100%;
+  max-width: 100%;
+  border: none;
+
+  @media (min-width: $tablet-width) {
+    height: 400px;
+    max-height: 400px;
   }
 }

@@ -112,7 +112,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    max-width: 420px;
+    max-width: 450px;
     margin-bottom: 40px;
   }
 }
@@ -137,6 +137,7 @@
 
   @media (min-width: $desktop-width) {
     margin-bottom: 52px;
+    max-width: 450px;
   }
 }
 

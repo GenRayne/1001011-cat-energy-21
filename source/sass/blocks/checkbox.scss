@@ -7,6 +7,7 @@
 }
 
 .checkbox__field {
+  position: absolute;
   opacity: 0;
   margin-right: 30px;
 
@@ -33,7 +34,9 @@
 }
 
 .checkbox__label {
+  display: block;
   position: relative;
+  padding-left: 47px;
   font-family: $font-headings;
   font-size: 16px;
   line-height: 18px;
@@ -44,21 +47,16 @@
   &::before {
     position: absolute;
     content: "";
-    top: -3px;
-    left: -46px;
+    top: -4px;
+    left: 0;
     width: 30px;
     height: 30px;
     border: thin solid $grey-dark;
 
     @media (min-width: $tablet-width) {
-      top: -5px;
-      left: -58px;
+      top: -10px;
       width: 40px;
       height: 40px;
-    }
-
-    @media (min-width: $desktop-width) {
-      left: -60px;
     }
   }
 
@@ -69,6 +67,7 @@
   }
 
   @media (min-width: $tablet-width) {
+    padding-left: 59px;
     font-size: 20px;
     line-height: 1;
   }
@@ -77,21 +76,17 @@
 .checkbox__field:checked + .checkbox__label::after {
   position: absolute;
   content: "";
-  top: 5px;
-  left: -40px;
+  top: 3px;
+  left: 7px;
   width: 20px;
   height: 14px;
   background-image: url("../img/checkbox-tick.svg");
   background-repeat: no-repeat;
 
   @media (min-width: $tablet-width) {
-    top: 8px;
-    left: -47px;
+    top: 3px;
+    left: 11px;
     width: 18px;
     height: 18px;
-  }
-
-  @media (min-width: $desktop-width) {
-    left: -49px;
   }
 }

@@ -78,13 +78,14 @@
 
   @media (min-width: $tablet-width) {
     grid-template-columns: repeat(2, 1fr);
-    column-gap: 58px;
-    row-gap: 50px;
+    column-gap: 55px;
+    row-gap: 52px;
   }
 
   @media (min-width: $desktop-width) {
     grid-template-columns: repeat(4, 1fr);
     column-gap: 81px;
+    padding-left: 40px;
   }
 }
 

@@ -159,11 +159,11 @@
 }
 
 .program-form__submit-container {
-  margin-top: 38px;
+  margin-top: 42px;
   padding-right: 20px;
 
   @media (min-width: $tablet-width) {
-    margin-top: 62px;
+    margin-top: 64px;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     column-gap: 60px;
@@ -171,7 +171,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin: 69px auto 0;
+    margin: 71px auto 0;
     padding: 0 110px 82px;
     max-width: $desktop-width;
     column-gap: 80px;

@@ -10,6 +10,7 @@
 
   @media (min-width: $tablet-width) {
     flex-direction: row;
+    justify-content: flex-end;
     align-items: center;
     flex-wrap: wrap;
   }
@@ -28,10 +29,10 @@
   border-bottom: thin solid $border-color;
 
   @media (min-width: $tablet-width) {
-    margin-right: 35px;
+    margin-left: 35px;
     border: none;
 
-    &:last-child {
+    &:first-child {
       margin-right: 0;
       border: none;
     }

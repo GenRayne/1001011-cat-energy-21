@@ -4,7 +4,7 @@
   position: relative;
   margin: auto;
   width: 100%;
-  height: 305px;
+  min-height: 305px;
   background-repeat: no-repeat;
   background-size: contain;
 
@@ -34,7 +34,7 @@
 
   @media (min-width: $tablet-width) {
     width: 100%;
-    height: 654px;
+    min-height: 654px;
     background-size: contain;
 
     .slider__marker {
@@ -62,7 +62,7 @@
 
   @media (min-width: $desktop-width) {
     width: 100%;
-    height: 672px;
+    min-height: 672px;
 
     &--before {
       background-position: left top 18px;

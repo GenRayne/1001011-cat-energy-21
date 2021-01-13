@@ -9,7 +9,6 @@
 .checkbox__field {
   position: absolute;
   opacity: 0;
-  margin-right: 30px;
 
   &:disabled {
     + .checkbox__label {
@@ -27,10 +26,6 @@
       box-shadow: 0 0 0 1px;
     }
   }
-
-  @media (min-width: $tablet-width) {
-    margin-right: 41px;
-  }
 }
 
 .checkbox__label {
@@ -47,7 +42,7 @@
   &::before {
     position: absolute;
     content: "";
-    top: -4px;
+    top: -5px;
     left: 0;
     width: 30px;
     height: 30px;

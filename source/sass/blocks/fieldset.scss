@@ -62,7 +62,7 @@
 
 .fieldset__bordered-box {
   @media (min-width: $tablet-width) {
-    padding: 35px 28px 31px;
+    padding: 35px 28px 33px;
     border: thin solid $field-border-color;
   }
 
@@ -102,10 +102,10 @@
 }
 
 .fieldset__radio {
-  margin-bottom: 23px;
+  margin-bottom: 25px;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 31px;
+    margin-bottom: 33px;
   }
 
   &:last-child {

@@ -2,6 +2,7 @@
 @import "../global/colors.scss";
 
 .page-footer {
+  min-width: $mobile-width;
   background-color: $grey-light;
 
   .logo-text {

@@ -42,6 +42,12 @@
     }
   }
 
+  .pseudo-fieldset__heading {
+    @media (min-width: $tablet-width) {
+      background-image: linear-gradient(to bottom, transparent 0%, transparent 23px, $primary-base 23px, $primary-base 25px, transparent 25px, transparent 100%);
+    }
+  }
+
   .program-form__additional {
     margin-top: 23px;
     margin-bottom: 23px;

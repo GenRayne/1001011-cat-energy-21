@@ -16,45 +16,21 @@
   margin-bottom: 25px;
   padding: 0;
   width: 100%;
+  background-image: linear-gradient(to bottom, transparent 0%, transparent 16px, $primary-base 16px, $primary-base 18px, transparent 18px, transparent 100%);
 
-  &::after {
-    content: "";
-    position: relative;
-    top: 15px;
-    right: 0;
-    margin-left: 20px;
-    display: block;
-    width: 100%;
-    height: 2px;
-    background-color: $primary-base;
+  @media (min-width: $tablet-width) {
+    padding-left: 30px;
 
-    @media (min-width: $tablet-width) {
-      top: 23px;
-      margin-left: 40px;
-    }
-
-    @media (min-width: $desktop-width) {
-      top: 23px;
-      margin-left: 42px;
+    .fieldset-heading__text {
+      padding: 0 40px;
     }
   }
 
-  &::before {
-    @media (min-width: $tablet-width) {
-      content: "";
-      position: relative;
-      top: 23px;
-      left: 0;
-      margin-right: 40px;
-      display: block;
-      width: 45px;
-      height: 2px;
-      background-color: $primary-base;
-    }
+  @media (min-width: $desktop-width) {
+    padding-left: 70px;
 
-    @media (min-width: $desktop-width) {
-      top: 23px;
-      width: 90px;
+    .fieldset-heading__text {
+      padding-left: 40px;
     }
   }
 }

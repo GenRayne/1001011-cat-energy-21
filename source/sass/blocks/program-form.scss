@@ -177,8 +177,8 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin: 71px auto 0;
-    padding: 0 110px 82px;
+    margin: 71px auto 82px;
+    padding: 0 110px;
     max-width: $desktop-width;
     column-gap: 80px;
   }

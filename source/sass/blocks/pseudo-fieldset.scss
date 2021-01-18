@@ -4,11 +4,6 @@
 .pseudo-fieldset {
   position: relative;
   display: block;
-
-  @media (min-width: $desktop-width) {
-    margin: 0 auto;
-    max-width: $desktop-width;
-  }
 }
 
 .pseudo-fieldset__heading {
@@ -27,16 +22,9 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding-left: 70px;
-
-    .fieldset-heading__text {
-      padding-left: 40px;
-    }
+    display: block;
+    padding: 0;
   }
-}
-
-.pseudo-fieldset__heading-text {
-  flex-shrink: 0;
 }
 
 .pseudo-fieldset__inputs-container {
@@ -49,6 +37,8 @@
   }
 
   @media (min-width: $desktop-width) {
+    margin: 0 auto;
     padding: 47px 110px 2px;
+    max-width: $desktop-width;
   }
 }

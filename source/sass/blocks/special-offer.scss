@@ -2,7 +2,6 @@
 @import "../global/colors.scss";
 
 .special-offer {
-  grid-area: special-offer;
   padding: 0 20px;
 
   @media (min-width: $tablet-width) {

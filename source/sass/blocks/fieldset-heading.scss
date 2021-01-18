@@ -22,25 +22,38 @@
     display: block;
     top: -5px;
     padding-right: 42px;
-    padding-left: 40px;
-    width: fit-content;
+    padding-left: 30px;
     font-size: 36px;
     line-height: 36px;
     white-space: normal;
-    background-image: none;
+    background-image: linear-gradient(to bottom, transparent 0%, transparent 23px, $primary-base 23px, $primary-base 25px, transparent 25px, transparent 100%);
 
     br {
       display: none;
     }
   }
+
+  @media (min-width: $desktop-width) {
+    padding: 0;
+  }
+}
+
+.fieldset-heading__container {
+  @media (min-width: $desktop-width) {
+    display: block;
+    margin: 0 auto;
+    max-width: 1300px;
+  }
 }
 
 .fieldset-heading__text {
+  display: block;
   padding-right: 22px;
-  width: min-content;
+  width: fit-content;
   background-color: $white;
 
   @media (min-width: $tablet-width) {
-    padding-right: 0;
+    padding-right: 42px;
+    padding-left: 39px;
   }
 }

@@ -4,20 +4,21 @@
 
 .products-extra {
   @media (min-width: $desktop-width) {
+    margin-bottom: 87px;
+  }
+}
+
+.products-extra__container {
+  @media (min-width: $desktop-width) {
     display: grid;
     grid-template-columns: 3fr 1fr;
-    grid-template-areas:
-      "extra-heading extra-heading"
-      "extra-list    special-offer";
     column-gap: 80px;
-    row-gap: 80px;
-    margin: 0 auto 87px;
+    margin: 0 auto;
     max-width: $desktop-width;
   }
 }
 
 .products-extra__main-heading {
-  grid-area: extra-heading;
   line-height: 24px;
 
   @media (min-width: $tablet-width) {
@@ -27,7 +28,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin-bottom: 0;
+    margin-bottom: 80px;
   }
 
   .fieldset-heading__text {
@@ -40,14 +41,13 @@
     }
 
     @media (min-width: $desktop-width) {
-      margin-left: 70px;
+      margin-left: 0;
       padding-left: 40px;
     }
   }
 }
 
 .products-extra__list {
-  grid-area: extra-list;
   list-style: none;
   margin: 0;
   margin-top: 34px;
